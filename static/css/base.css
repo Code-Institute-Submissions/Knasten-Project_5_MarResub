@@ -1,9 +1,31 @@
+:root {
+    --primary-border-color: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
+    --primary-border-color2: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
+    --fallback-border-color: #1a2a6c;
+    --blur: 10px;
+}
+
 html {
     height: 100%;
 }
+
 body {
-    margin-top: 68px;
+    margin-top: 98px;
     background: url('/media/main-bg.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
+}
+
+header {
+    background: linear-gradient(90deg, #cc2b5e, #753a88);
+    height: 62px;
+}
+.bg-shroud {
+    background-color: rgb(255, 255, 255, 0.7);
+}
+#home-link-left {
+    margin-top: 150px;
+}
+#home-link-right {
+    margin-top: 300px;
 }
