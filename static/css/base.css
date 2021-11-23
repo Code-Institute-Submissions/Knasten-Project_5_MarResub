@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    margin-top: 98px;
+    margin-top: 192px;
     background: url('/media/main-bg.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
@@ -23,9 +23,6 @@ header {
 .bg-shroud {
     background-color: rgb(255, 255, 255, 0.7);
 }
-#home-link-left {
-    margin-top: 150px;
-}
 #home-link-right {
-    margin-top: 300px;
+    margin-top: 250px;
 }
