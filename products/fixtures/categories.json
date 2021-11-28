@@ -1,0 +1,82 @@
+[
+    {
+        "pk": 1,
+        "model": "products.category",
+        "fields": {
+            "name": "cpu",
+            "friendly_name": "Processors"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+            "name": "ram",
+            "friendly_name": "RAM"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+            "name": "gpu",
+            "friendly_name": "Graphic Cards"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+            "name": "mb",
+            "friendly_name": "Motherboard"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+            "name": "psu",
+            "friendly_name": "Power Supply"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+            "name": "cooling",
+            "friendly_name": "Cooling & Fans"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+            "name": "cases",
+            "friendly_name": "Cases"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.category",
+        "fields": {
+            "name": "monitors",
+            "friendly_name": "Monitors"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.category",
+        "fields": {
+            "name": "computers",
+            "friendly_name": "Computers"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.category",
+        "fields": {
+            "name": "storage",
+            "friendly_name": "Storage"
+        }
+    }
+]

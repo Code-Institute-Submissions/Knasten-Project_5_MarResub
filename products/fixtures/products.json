@@ -1,0 +1,1474 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "6454199",
+            "name": "Samsung - 980 500GB PCIe Gen 3 x4 NVMe Gaming Internal Solid State Drive",
+            "description": "Harness your PC's potential with the 980. Whether you need a boost for gaming or a seamless workflow for heavy graphics, the 980 is a smart choice for outstanding SSD performance — and it's all backed by an NVMe* interface and PCIe 3.0 technology.",
+            "price": 59.99,
+            "category": 10,
+            "rating": 4.9,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6454/6454199cv13d.jpg",
+            "image": "6454199.jpg",
+            "make": "Samsung",
+            "model_id": "MZ-V8V500B/AM"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "6474702",
+            "name": "Seagate - FireCuda 530 NVMe 1TB M.2 Internal PCIe Gen 4 x4 Solid State Drive with Heatsink",
+            "description": "Straight-leg styling and on-the-job comfort make our Audra pants a flattering business decision. flat front zip fly with hook-and-bar closure 2 front and 2 back welt pockets 34 1/2\" inseam polyester/rayon/spandex washable imported",
+            "price": 259.99,
+            "category": 10,
+            "rating": 5.0,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6474/6474702_sd.jpg",
+            "image": "6474702.jpg",
+            "make": "Seagate",
+            "model_id": "ZP1000GM3A023"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "6402020",
+            "name": "SanDisk - Ultra 1TB PCIe Gen 3 x4 NVMe Internal Solid State Drive",
+            "description": "Build a system that keeps up with you with the SanDisk Ultra® M.2 NVMe™ 3D SSD. Whether you’re upgrading your current PC or building a new one from scratch, get lightning-fast, ultra-responsive performance in a powerful yet price-conscious drive. Sequential write speeds of up to 1,950MB/s ensure fast booting and rapid data transfer. Accelerate with next-gen NVMe performance to boot faster, work smarter and play longer.",
+            "price": 84.99,
+            "category": 10,
+            "rating": 4.8,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6402/6402020_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6402020.jpg",
+            "make": "SanDisk",
+            "model_id": "SDSSDH3N-1T00-G25"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "6422327",
+            "name": "Samsung - 870 QVO 2TB SATA 2.5\" Internal Solid State Drive Single Unit Version",
+            "description": "",
+            "price": 184.99,
+            "category": 10,
+            "rating": 4.9,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6422/6422327_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6422327.jpg",
+            "make": "Samsung",
+            "model_id": "MZ-77Q2T0B/AM"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "6344172",
+            "name": "Seagate - Barracuda 2TB Internal SATA Hard Drive for Desktops",
+            "description": "",
+            "price": 46.99,
+            "category": 10,
+            "rating": 4.7,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6344/6344172_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6344172.jpg",
+            "make": "Seagate",
+            "model_id": "ST2000DMA08"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "6309234",
+            "name": "Seagate - Game Drive for PS4 2TB External USB 3.0 Portable Hard Drive - Black",
+            "description": "",
+            "price": 84.99,
+            "category": 10,
+            "rating": 4.8,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6309/6309234_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6309234.jpg",
+            "make": "Seagate",
+            "model_id": "STGD2000100"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "6470356",
+            "name": "CORSAIR - VENGEANCE LPX 32GB (2 x 16GB) DDR4 3600 (PC4-28800) C18 1.35V Desktop Memory - Black",
+            "description": "VENGEANCE LPX memory is designed for high-performance overclocking. The heatspreader is made of pure aluminum for faster heat dissipation, and the custom performance PCB helps manage heat and provides superior overclocking headroom. Each IC is individually screened for performance potential. The DDR4 form factor is optimized for the latest Intel DDR4 motherboards and offers higher frequencies, greater bandwidth, and lower power consumption than DDR3 modules. VENGEANCE LPX DDR4 modules are compatibility-tested across Intel DDR4 motherboards for reliably fast performance. They’re available in multiple colors to match your motherboard, your components, or just your style.",
+            "price": 119.99,
+            "category": 2,
+            "rating": 4.9,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6470/6470356_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6470356.jpg",
+            "make": "CORSAIR",
+            "model_id": "CMK32GX4M2D3600C18"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "6455443",
+            "name": "ADATA - XPG SPECTRIX D50 32GB 2x16GB 3.2GHz CL16 RGB Desktop Memory - White",
+            "description": "Reaching speeds of up to 4800MHz and sporting a maximum capacity of 32GB, the XPG SPECTRIX D50 is a monster of a memory module. It also has looks to kill with an elegant styling with geometric lines. Made with only the highest quality chips and PCBs, the D50 provides ultimate stability, reliability, and speeds of up to 4800MHz. What’s more, it supports the latest Intel X299 and AMD TR40 platforms. The D50 sports a solidly constructed 1.95mm-thick metal heatsink for excellent durability. The D50 features a clean and elegant exterior with simple geometric lines and a triangular RGB panel that fits in perfectly with the modules overall design. With the XPG RGB Sync app or a RGB software from a major motherboard brand, switch between three RGB modes - Static, Breathing, and Comet. In addition to the three modes, you can also set it to Music mode to sync with your favorite jams. The D50 supports Intel XMP 2.0 for hassle-free and stable overclocking without the need to go into BIOS.",
+            "price": 124.99,
+            "category": 2,
+            "rating": 0,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6455/6455443_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6455443.jpg",
+            "make": "ADATA",
+            "model_id": "AX4U320016G16A-DW50"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "6450421",
+            "name": "CORSAIR - DOMINATOR PLATINUM RGB 32GB (2x16GB) 3.6 GHz DDR4 C18 Desktop Memory Kit AMD Optimized",
+            "description": "CORSAIR DOMINATOR® PLATINUM RGB DDR4 Memory redefines premium DDR4 memory, with timeless iconic design, superior craftsmanship and aluminum construction that’s built to last. Powered by tightly-screened high-frequency memory chips, DOMINATOR PLATINUM RGB ensures high frequency performance with generous room for overclocking thanks to a custom PCB cooled by CORSAIR’S patented DHX cooling technology. Use CORSAIR iCUE software to customize virtually limitless lighting effects from 12 ultra-bright, individually addressable RGB LEDs, and stay informed with real-time frequency and temperature monitoring. Complete with wide compatibility with the latest motherboards, Intel® XMP 2.0 support for simple setup, and a limited lifetime warranty, this is DDR4 memory in a class of its own.",
+            "price": 259.99,
+            "category": 2,
+            "rating": 4.8,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6450/6450421_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6450421.jpg",
+            "make": "CORSAIR",
+            "model_id": "CMT32GX4M2D3600C18"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "sku": "6467036",
+            "name": "PNY - XLR8 2-Pack 32GB 3200 DDR4 Desktop Memory Kit with RGB Lighting",
+            "description": "A PNY XLR8 Gaming EPIC-X RGB™ Memory Upgrade offers a brilliant RGB design combined with extreme overclocked performance, taking your PC to the next level. Not only can you destroy the competition, but your system can look good while doing so.",
+            "price": 132.99,
+            "category": 2,
+            "rating": 4.8,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6467/6467036cv1d.jpg;maxHeight=640;maxWidth=550",
+            "image": "6467036.jpg",
+            "make": "PNY",
+            "model_id": "MD32GK2D4360018XRGB"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "sku": "6468872",
+            "name": "CORSAIR - VENGEANCE LPX 64GB (2 x 32GB) DDR4 3200 (PC4-25600) C16 1.35V Desktop Memory - Black",
+            "description": "",
+            "price": 84.99,
+            "category": 2,
+            "rating": 4.8,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6468/6468872_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6468872.jpg",
+            "make": "CORSAIR",
+            "model_id": "CMK64GX4M2E3200C16"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "sku": "6455367",
+            "name": "MSI - Z590 PRO WIFI (Socket LGA1200) Intel Motherboard",
+            "description": "",
+            "price": 199.99,
+            "category": 4,
+            "rating": 4.7,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6455/6455367_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6455367.jpg",
+            "make": "MSI",
+            "model_id": "Z590 PRO WIFI"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "sku": "6420397",
+            "name": "GIGABYTE B550 AORUS PRO AC AM4 USB 3.1 AMD Motherboard with WIFI - Black",
+            "description": "B550 AORUS PRO AC motherboard uses an 12*+2 phases digital CPU power design which includes both digital PWM Controller and DrMOS. These 100% digital controller offer incredible precision in delivering power to the motherboard's most power-hungry and energy-sensitive components, allowing enthusiasts to get the absolute maximum performance from 3rd Gen AMD Ryzen™ processors.",
+            "price": 209.99,
+            "category": 4,
+            "rating": 4.3,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6420/6420397_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6420397.jpg",
+            "make": "GIGABYTE",
+            "model_id": "B550 AORUS PRO AC"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "sku": "6356983",
+            "name": "ASUS - TUF GAMING X570-PLUS (WI-FI) (Socket AM4) USB-C Gen2 AMD Motherboard with LED Lighting",
+            "description": "Get the power you need to play demanding games with this ASUS TUF gaming motherboard. The AMD chipset provides power and compatibility with Ryzen processors while Gigabit Ethernet, Bluetooth 5 and 802.11ac Wi-Fi deliver fast connectivity. Active cooling and multiple heat sinks keep this ASUS TUF gaming motherboard running at peak performance.",
+            "price": 195.99,
+            "category": 4,
+            "rating": 4.8,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6356/6356983_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6356983.jpg",
+            "make": "ASUS",
+            "model_id": "TUF X570-PLUS GAMING (WI-FI)"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "sku": "6452561",
+            "name": "ASUS - PRIME Z590-A Socket LGA 1200 USB 3.2 Intel Motherboard",
+            "description": "ASUS Prime series motherboards are expertly engineered to unleash the full potential of 10th and 11th Generation Intel® Core™ processors. Boasting a robust power design, comprehensive cooling solutions and intelligent tuning options, Prime Z590-A provides daily users and DIY PC builders a range of performance tuning options via intuitive software and firmware features",
+            "price": 277.99,
+            "category": 4,
+            "rating": 4.6,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452561_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6452561.jpg",
+            "make": "ASUS",
+            "model_id": "PRIME Z590-A"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "sku": "6475180",
+            "name": "NZXT - AMD B550 Wireless Gaming Motherboard",
+            "description": "Designed around AMD’s B550 chipset, the N7 B550 delivers everything you need to build an incredible gaming PC. Features include built-in Wi-Fi 6E connectivity, integrated fan controller, front panel USB 3.2 Gen2 Type-C, RGB accesories supported across all manufacturers, and more. The motherboard cover perfectly matches the color and finish of your NZXT case, creating a visually seamless backdrop for your components.",
+            "price": 254.99,
+            "category": 4,
+            "rating": 5.0,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6475/6475180cv1d.jpg;maxHeight=640;maxWidth=550",
+            "image": "6475180.jpg",
+            "make": "NZXT",
+            "model_id": "N7-B55XT-B1"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+            "sku": "6468926",
+            "name": "GIGABYTE - NVIDIA GeForce GT 1030 2GB GDDR4 PCI Express 3.0 Graphics Card",
+            "description": "Get the ultimate gaming performance with AORUS RTX 3080 Graphics Cards. Powered by NVIDIA's 2nd gen RTX architecture and refined with AORUS's Max Covered cooling technology, the AORUS GeForce RTX 3080 MASTER 10G (Rev 2.0) brings stunning visuals, amazingly fast frame rates, and AI acceleration to games and creative applications with its enhanced RT Cores and Tensor Cores, and superfast G6X memory.",
+            "price": 109.99,
+            "category": 3,
+            "rating": 4.3,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6468/6468926_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6468926.jpg",
+            "make": "GIGABYTE",
+            "model_id": "GV-N1030D4-2GL"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "products.product",
+        "fields": {
+            "sku": "6471621",
+            "name": "PNY - GeForce GT 730 2GB DDR3 Single Fan Graphics Card",
+            "description": "Upgrade to the new GeForce GT 730 dedicated card and get accelerated performance that blows away integrated graphics for today’s demanding PC multimedia applications. The GT 730 features the latest graphics technologies, so you can enjoy faster web browsing, photo and video editing, and gaming. It’s the easy, affordable way to get your PC up to speed. GeForce GT means speed, stability, and industry leading NVIDIA drivers. Tap into GeForce Experience to automatically get the latest drivers and optimize game settings with a single click.",
+            "price": 114.99,
+            "category": 3,
+            "rating": 4.3,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6471/6471621cv11d.jpg",
+            "image": "6471621.jpg",
+            "make": "PNY",
+            "model_id": "VCGGT7302XPB-BB"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "products.product",
+        "fields": {
+            "sku": "6465789",
+            "name": "NVIDIA - GeForce RTX 3070 Ti 8GB GDDR6X PCI Express 4.0 Graphics Card - Dark Platinum and Black",
+            "description": "",
+            "price": 599.99,
+            "category": 3,
+            "rating": 4.9,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6465/6465789_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6465789.jpg",
+            "make": "NVIDIA",
+            "model_id": "900-1G143-2515-000"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "products.product",
+        "fields": {
+            "sku": "6429434",
+            "name": "NVIDIA GeForce RTX 3090 24GB GDDR6X PCI Express 4.0 Graphics Card - Titanium and Black",
+            "description": "The GeForce RTX 3090 is colossally powerful in every way, giving you a whole new tier of performance. It’s powered by Ampere—NVIDIA’s 2nd gen RTX architecture—doubling down on ray tracing and AI performance with enhanced RT Cores, Tensor Cores, and new streaming multiprocessors. Plus, it features a staggering 24 GB of G6X memory, all to deliver the ultimate gaming experience.",
+            "price": 1499.99,
+            "category": 3,
+            "rating": 4.8,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6429/6429434_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6429434.jpg",
+            "make": "NVIDIA",
+            "model_id": "9001G1362510000"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "products.product",
+        "fields": {
+            "sku": "6454318",
+            "name": "PNY - NVIDIA GeForce RTX 3060 12GB XLR8 Gaming REVEL EPIC-X RGB Single Fan Graphics Card",
+            "description": "",
+            "price": 619.99,
+            "category": 3,
+            "rating": 3.6,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6454/6454318_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6454318.jpg",
+            "make": "PNY",
+            "model_id": "VCG306012SFXPPB"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "products.product",
+        "fields": {
+            "sku": "6397797",
+            "name": "MSI - AMD Radeon RX 5500 XT 8GB GDDR6 PCI Express 4.0 Graphics Card - Black/Gray",
+            "description": "Improve your gaming performance with this Radeon RX 5500 series graphics card. Specially engineered RDNA architecture accelerates game fidelity by reducing input lag, tears and stutters during play. The multi-level cache hierarchy reduces latency and increases each game's responsiveness. The fan in this Radeon RX 5500 series graphics card features two fan-blade structures to create steady yet accelerated airflow for temperate gaming.",
+            "price": 204.99,
+            "category": 3,
+            "rating": 4.4,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6397/6397797_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6397797.jpg",
+            "make": "MSI",
+            "model_id": "RX 5500 XT MECH 8G OC BV"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "products.product",
+        "fields": {
+            "sku": "6485047",
+            "name": "MSI - AMD Radeon RX 6600 MECH 2X 8G- 8GB GDDR6 - PCI Express 4.0 Gaming Graphics Card",
+            "description": "Radeon™ RX 6000 MECH SERIES ARM YOURSELF FOR THE FINAL BLOW MECH brings a performance-focused design that maintains the essentials to accomplish any task at hand. Rocking a trusted dual fan arrangement laid into a rigid industrial design lets this sharp looking graphics card fit into any build. A clean-looking brushed-finish backplate reinforces the length of the card. MECH has been crafted to serve you well during intense gameplay. This legendary item has extra power unlocked through the Custom PCB. Additional fuses built into the custom PCB provide additional safeguards against electrical damage. An enhanced PCB material design with 2oz thickened copper increases conductivity, improving heat dissipation, and high-performance reliability.",
+            "price": 489.99,
+            "category": 3,
+            "rating": 3.4,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6485/6485047_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6485047.jpg",
+            "make": "MSI",
+            "model_id": "Radeon RX 6600 MECH 2X 8G"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "products.product",
+        "fields": {
+            "sku": "6457624",
+            "name": "XFX - AMD Radeon RX 6700 XT 12GB GDDR6 PCI Express 4.0 Gaming Graphics Card - Gray/Black",
+            "description": "Introducing the AMD Radeon™ RX 6000 Series graphics cards, featuring the breakthrough AMD RDNA™ 2 architecture, engineered to deliver powerhouse performance for all gamers. The AMD Radeon™ RX 6700 Series graphics cards power a new generation of competitive and 4K gaming with vivid visuals, and elevated experiences in every game and every frame.",
+            "price": 529.99,
+            "category": 3,
+            "rating": 4.1,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6457/6457624_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6457624.jpg",
+            "make": "XFK",
+            "model_id": "RX-67TMYDFD8"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "products.product",
+        "fields": {
+            "sku": "6432445",
+            "name": "ASUS - GeForce RTX 3080 10GB GDDR6X PCI Express 4.0 Strix Graphics Card - Black",
+            "description": "GeForce RTX 3080 10GB GDDR6X PCI Express 4.0 Strix Graphics Card - Black",
+            "price": 1149.99,
+            "category": 3,
+            "rating": 4.8,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6432/6432445_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6432445.jpg",
+            "make": "ASUS",
+            "model_id": "ROG-STRIX-RTX3080-O10G-GAMING"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "products.product",
+        "fields": {
+            "sku": "6477077",
+            "name": "EVGA - GeForce RTX 3070 XC3 ULTRA GAMING 8GB GDDR6 PCI Express 4.0 Graphics Card LIGHT HASH RATE",
+            "description": "The EVGA GeForce RTX 3070 is powered by the NVIDIA Ampere architecture. Built with enhanced RT Cores and Tensor Cores, new streaming multiprocessors, and high-speed G6 memory, it gives you the power you need to rip through the most demanding games at 1440p resolution. Combined with the next generation of design, cooling, and overclocking with EVGA Precision X1, the EVGA GeForce RTX 3070 Series creates a definition for ultimate performance.",
+            "price": 679.99,
+            "category": 3,
+            "rating": 4.9,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6477/6477077cv1d.jpg",
+            "image": "6477077.jpg",
+            "make": "EVGA",
+            "model_id": "08G-P5-3755-KH"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "products.product",
+        "fields": {
+            "sku": "6411488",
+            "name": "Intel - Core i7-10700K 10th Generation 8-Core - 16-Thread - 3.8 GHz (5.1 GHz Turbo) Socket LGA1200 Unlocked Desktop Processor",
+            "description": "Build a powerful PC with this 10th Gen Intel Core i7 desktop processor. The eight cores and Hyper-Threading technology support advanced multitasking, while the base clock speeds of up to 3.1GHz deliver speedy responses. This unlocked Intel Core i7 desktop processor features Intel Turbo Boost Max to handle complex content creation tools.",
+            "price": 349.99,
+            "category": 1,
+            "rating": 4.8,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6411/6411488_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6411488.jpeg",
+            "make": "Intel",
+            "model_id": "BX8070110700K"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "products.product",
+        "fields": {
+            "sku": "6438941",
+            "name": "AMD - Ryzen 9 5950X 4th Gen 16-core, 32-threads Unlocked Desktop Processor Without Cooler",
+            "description": "One processor that can game as well as it creates. Get the high-speed gaming performance of the world’s best desktop processor. A fast and easy way to expand and accelerate the storage in a desktop PC with an AMD Ryzen processor.",
+            "price": 769.00,
+            "category": 1,
+            "rating": 4.9,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6438/6438941_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6438941.jpg",
+            "make": "AMD",
+            "model_id": "100-100000059WOF"
+        }
+    },
+    {
+        "pk": 29,
+        "model": "products.product",
+        "fields": {
+            "sku": "6439000",
+            "name": "AMD - Ryzen 7 5800X 4th Gen 8-core, 16-threads Unlocked Desktop Processor Without Cooler",
+            "description": "8 cores optimized for high-FPS gaming rigs. Get the high-speed gaming performance of the world’s best desktop processor. AMD Ryzen Master Utility the Simple and Powerful Overclocking Utility for AMD Ryzen processors.",
+            "price": 419.90,
+            "category": 1,
+            "rating": 4.8,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6439/6439000_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6439000.jpg",
+            "make": "AMD",
+            "model_id": "100-100000063WOF"
+        }
+    },
+    {
+        "pk": 30,
+        "model": "products.product",
+        "fields": {
+            "sku": "6302019",
+            "name": "Intel - Core i9-9900K 9th Generation 8-Core - 16-Thread - 3.6 GHz (5.0 GHz Turbo) Socket LGA 1151 Unlocked Desktop Processor",
+            "description": "Complete your computer setup with this Intel Core i9 desktop processor. The hyper-threading technology allows for 16-way multitasking, and eight cores combine with Turbo Boost Technology 2.0 for quick operations. This Intel Core i9 desktop processor supports Optane memory for more efficient loading and increased overall responsiveness with faster access to data.",
+            "price": 439.99,
+            "category": 1,
+            "rating": 4.9,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6302/6302019_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6302019.jpg",
+            "make": "Intel",
+            "model_id": "BX80684I99900K"
+        }
+    },
+    {
+        "pk": 31,
+        "model": "products.product",
+        "fields": {
+            "sku": "6452220",
+            "name": "Intel - Core i5-11600K 11th Generation - 6 Core - 12 Thread - 3.9 to 4.9 GHz - LGA1200 - Unlocked Desktop Processor",
+            "description": "11th Gen Intel® Core™ i5-11600K unlocked desktop processor. Featuring PCIe Gen 4.0 support, unlocked 11th Gen Intel® Core™ desktop processors are optimized for productivity, gaming, and overclocking. Thermal solution NOT included in the box. Compatible with 500 series & select 400 series chipset based motherboards. Refer to motherboard vendor for compatiblity details. 125W.",
+            "price": 263.99,
+            "category": 1,
+            "rating": 4.8,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452220_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6452220.jpg",
+            "make": "Intel",
+            "model_id": "BX8070811600K"
+        }
+    },
+    {
+        "pk": 32,
+        "model": "products.product",
+        "fields": {
+            "sku": "6356279",
+            "name": "AMD - Ryzen 3 3200G 2nd Generation 4-Core - 4-Thread - 3.6 GHz (4.0 GHz Max Boost) Socket AM4 Unlocked Desktop Processor",
+            "description": "Enhance the performance of your desktop computer with this AMD Ryzen 3 3200G quad-core processor. The 4GHz Max Boost clock provides ample power for running intensive applications, and 4MB of L3 cache queues commands in the processor quickly. This AMD Ryzen 3 3200G quad-core processor has Radeon Vega 8 graphics for everyday use playing movies or casual games.",
+            "price": 99.99,
+            "category": 1,
+            "rating": 4.6,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6356/6356279cv12d.jpg",
+            "image": "6356279.jpg",
+            "make": "AMD",
+            "model_id": "YD320GC5FIBOX"
+        }
+    },
+    {
+        "pk": 33,
+        "model": "products.product",
+        "fields": {
+            "sku": "6370550",
+            "name": "CORSAIR - iCUE 220T RGB Airflow ATX Mid-Tower Smart Case - Black",
+            "description": "Build a PC system using this Corsair iCUE mid-tower ATX smart case. The high airflow layout and three 120mm RGB fans ensure optimal cooling, while the tempered glass side panel lets you show off your components. This Corsair iCUE mid-tower ATX smart case features flexible storage options with dual 2.5-inch bays and two removable trays.",
+            "price": 99.99,
+            "category": 7,
+            "rating": 4.6,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6370/6370550cv19d.jpg",
+            "image": "6370550.jpg",
+            "make": "CORSAIR",
+            "model_id": "CC-9011173-WW"
+        }
+    },
+    {
+        "pk": 34,
+        "model": "products.product",
+        "fields": {
+            "sku": "6365750",
+            "name": "NZXT - H510i Compact ATX Mid-Tower Case with RGB Lighting - Matte White",
+            "description": "Build a customized PC from scratch with this NZXT compact mid-tower. The front-facing USB-C connector offers easier connectivity to smartphones or external storage, while the cable management system includes pre-installed channels for intuitive wiring. This NZXT compact mid-tower features a tempered glass side panel to showcase your build and has dual fans for optimum airflow.",
+            "price": 89.99,
+            "category": 7,
+            "rating": 4.7,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6365/6365750cv11d.jpg",
+            "image": "6365750.jpg",
+            "make": "NZXT",
+            "model_id": "CA-H510I-W1"
+        }
+    },
+    {
+        "pk": 35,
+        "model": "products.product",
+        "fields": {
+            "sku": "6462018",
+            "name": "MSI - MPG GUNGNIR 110R ATX Mid-Tower Case",
+            "description": "The MPG series brings out the best in gamers by allowing full expression in color with advanced RGB lighting control and synchronization. Experiment on another level of personalization with a front LED strip that provides convenient in-game and real time notifications. With the MPG series, transform your equipment into the center of attention and top leaderboards in style. THE FOUNDATION FOR EXCELLENCE. Excel with the MPG GUNGNIR 110 Series, the epitome of high standards in a mid-tower chassis. Designed with versatility, constructed from high-quality materials, and born for performance. Choose eminence and embrace excellence. BEAUTIFUL CRAFTSMANSHIP. The MPG GUNGNIR 110R is designed with a memorable high-performance look to impress on first sight. A sleek front glass panel offers a dazzling view of the interior lighting that highlights the quality of the parts in the rest of the system. BETTER TOGETHER. Synergize MPG GUNGNIR 110 Series with an MSI motherboard including bridging a USB Type-C port for convenient access. Establish a complete MSI gaming ecosystem with a graphics card and liquid cooling. INSTA-LIGHT LOOP BUTTON. Quickly control the fan color and lighting effects with Insta-Light Loop at the touch of a button. Click through the profiles at ease and choose a favorite. TEMPERED GLASS WINDOW. MPG GUNGNIR 110 Series reveals your arsenal with a tempered glass side panel. Arm the system with MSI’s liquid cooler, motherboard, and graphics card for the ultimate display of power and performance.",
+            "price": 109.99,
+            "category": 7,
+            "rating": 5.0,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6462/6462018_sd.jpg",
+            "image": "6462018.jpg",
+            "make": "MSI",
+            "model_id": "MPG GUNGNIR 110R"
+        }
+    },
+    {
+        "pk": 36,
+        "model": "products.product",
+        "fields": {
+            "sku": "6353122",
+            "name": "Thermaltake - V Series ATX Mid-Tower Case - Black",
+            "description": "Assemble a desktop computer with this Thermaltake V100 mid-tower chassis. The 120mm fan and space for additional cooling options ensure optimal ventilation, while the expandable drive bay design provides ample storage space. This Thermaltake V100 mid-tower chassis has I/O ports on the front panel for easy connections, and the steel construction improves durability.",
+            "price": 49.99,
+            "category": 7,
+            "rating": 4.4,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6353/6353122cv12d.jpg",
+            "image": "6353122.jpg",
+            "make": "Thermaltake",
+            "model_id": "CA-1K7-00M1NN-01"
+        }
+    },
+    {
+        "pk": 37,
+        "model": "products.product",
+        "fields": {
+            "sku": "6390925",
+            "name": "CORSAIR - iCUE 220T ATX Mid-Tower Case with Tempered Glass - White",
+            "description": "Create a customized computer setup with this CORSAIR iCUE RGB Airflow mid-tower case. The stainless steel and tempered glass construction ensure durability, while the front grill and three CORSAIR PRO fans offer ample airflow for rapid heat dissipation. This CORSAIR iCUE RGB Airflow mid-tower case has removable dust filters for high performance and fits up to four storage drives.",
+            "price": 114.99,
+            "category": 7,
+            "rating": 5.0,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6390/6390925cv11d.jpg",
+            "image": "6390925.jpg",
+            "make": "CORSAIR",
+            "model_id": "CC-9011174-WW"
+        }
+    },
+    {
+        "pk": 39,
+        "model": "products.product",
+        "fields": {
+            "sku": "6395561",
+            "name": "Samsung - Odyssey Gaming CRG5 Series 24 ” LED Curved FHD FreeSync monitor - Black",
+            "description": "Samsung’s 24-inch CRG5 curved screen pulls you in and immerses you in the action and with 144Hz refresh rate gives you clear images even in fast action scenes.",
+            "price": 149.99,
+            "category": 8,
+            "rating": 4.6,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6395/6395561_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6395561.jpg",
+            "make": "Samsung",
+            "model_id": "LC24RG50FQNXZA"
+        }
+    },
+    {
+        "pk": 40,
+        "model": "products.product",
+        "fields": {
+            "sku": "6453111",
+            "name": "Dell - 24\" VA LED FHD Curved Gaming Monitor (HDMI 2.0, Display Port 1.2) - Black",
+            "description": "The new Dell 24\" Curved Gaming Monitor is equipped with a 4ms Response Time - 165Hz - AMD FreeSync™ Premium Technology featuring Vertical Alignment, Anti-glare with 3H hardness, and 1500R Curvature. Adjustable height and LED screen, this 24\" monitor is equipped for ultimate game play.",
+            "price": 179.99,
+            "category": 8,
+            "rating": 4.7,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6453/6453111_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6453111.jpg",
+            "make": "Dell",
+            "model_id": "S2422HG"
+        }
+    },
+    {
+        "pk": 41,
+        "model": "products.product",
+        "fields": {
+            "sku": "6406940",
+            "name": "Alienware - AW2521HFL 24.5\" IPS LED FHD FreeSync and G-SYNC Compatible Monitor (DisplayPort, HDMI, USB) - Lunar Light",
+            "description": "Enjoy a smooth gaming experience with this Dell Alienware gaming monitor. The 24.5-inch Full HD display delivers high-resolution images, while the 240Hz refresh rate and 1ms response time (GtG) ensures real-time display for eliminating image shatters and tearing. This Dell Alienware gaming monitor features DisplayPort, HDMI and USB ports for flexible connectivity, and the ergonomic design allows for tilting, swiveling and pivoting for more vibrant gaming. For an immersive gaming experience, the AW2521HFL is equipped with AlienFX lighting that is fully customizable using Alienware Command Center (separate download required*).",
+            "price": 249.99,
+            "category": 8,
+            "rating": 4.7,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6406/6406940_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6406940.jpg",
+            "make": "Alienware",
+            "model_id": "RNHC4"
+        }
+    },
+    {
+        "pk": 42,
+        "model": "products.product",
+        "fields": {
+            "sku": "6438287",
+            "name": "GIGABYTE - 27\" IPS LED QHD FreeSync Monitor with KVM (HDMI, DisplayPort, USB) - Black",
+            "description": "GIGABYTE gaming monitors pack upscale performance into a streamlined package. The M27Q provides an immersive experience through fluid gameplay and great color accuracy with 0.5ms response time, 170Hz refresh rate, and compatibility with graphic card software.",
+            "price": 279.99,
+            "category": 8,
+            "rating": 4.2,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6438/6438287_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6438287.jpg",
+            "make": "GIGABYTE",
+            "model_id": "M27Q"
+        }
+    },
+    {
+        "pk": 43,
+        "model": "products.product",
+        "fields": {
+            "sku": "6400438",
+            "name": "HP OMEN - 27\" IPS LED QHD FreeSync & G-Sync Compatible Gaming Monitor (DisplayPort, HDMI, USB) - Shadow Black",
+            "description": "",
+            "price": 509.99,
+            "category": 8,
+            "rating": 4.8,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6400/6400438_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6400438.jpg",
+            "make": "HP",
+            "model_id": "OMEN 27i"
+        }
+    },
+    {
+        "pk": 44,
+        "model": "products.product",
+        "fields": {
+            "sku": "6425569",
+            "name": "Samsung - G97T Series 49\" Class 1000R Curved Gaming Monitor - Black",
+            "description": "At 49”, and arced to match the curvature of the human eye, the G9 marries unmatched immersion, with unbelievable performance, pixel perfect image quality and incredible visual design.",
+            "price": 1599.99,
+            "category": 8,
+            "rating": 4.5,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6425/6425569_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6425569.jpg",
+            "make": "Samsung",
+            "model_id": "LC49G97TSSNXDC"
+        }
+    },
+    {
+        "pk": 45,
+        "model": "products.product",
+        "fields": {
+            "sku": "6482014",
+            "name": "ASUS - ROG Strix 43” 4K 144Hz HDMI 2.1 1ms FreeSync Gaming Monitor with HDR (DisplayPort,USB)",
+            "description": "",
+            "price": 1299.99,
+            "category": 8,
+            "rating": 3.4,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6482/6482014_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6482014.jpg",
+            "make": "ASUS",
+            "model_id": "XG43UQ"
+        }
+    },
+    {
+        "pk": 46,
+        "model": "products.product",
+        "fields": {
+            "sku": "6454339",
+            "name": "ASUS - TUF VG35VQ Gaming Widescreen LCD Monitor - Black - Black",
+            "description": "",
+            "price": 479.99,
+            "category": 8,
+            "rating": 4.4,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6454/6454339_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6454339.jpg",
+            "make": "ASUS",
+            "model_id": "90LM0520-B011B0"
+        }
+    },
+    {
+        "pk": 47,
+        "model": "products.product",
+        "fields": {
+            "sku": "6415809",
+            "name": "LG - UltraGear 34\" IPS LED UltraWide HD FreeSync and G-SYNC Compatible Monitor with HDR (DisplayPort, HDMI) - Black",
+            "description": "Get an edge on the battlefield with this 34-inch LG Ultrawide UHD gaming monitor. The Nano IPS 1 ms speed provides ultra-fast response rates for fluid gameplay, while the VESA DisplayHDR 400 delivers rich color reproduction and lifelike visuals. This LG Ultrawide UHD gaming monitor features FreeSync technology and is NVIDIA G-SYNC compatible to eliminate stuttering and tearing.",
+            "price": 999.99,
+            "category": 8,
+            "rating": 4.6,
+            "image_url": "",
+            "image": "6415809.jpg",
+            "make": "LG",
+            "model_id": "34GN850-B.AUS"
+        }
+    },
+    {
+        "pk": 48,
+        "model": "products.product",
+        "fields": {
+            "sku": "6316592",
+            "name": "Cooler Master - Hyper 212 RGB Black Edition 120mm CPU Cooling Fan with RGB Lighting - Black",
+            "description": "Prevent overheating with this Cooler Master RGB fan. Four heat pipes provide direct contact to maximize heat dissipation, and it's compatible with Motherboard RGB software so you can change its settings to maximum cooling or silent operating. This Cooler Master RGB fan has an anodized aluminum finish to provide a sleek, polished look.",
+            "price": 44.99,
+            "category": 6,
+            "rating": 4.7,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6316/6316592_sa.jpg;maxHeight=640;maxWidth=550",
+            "image": "6316592.jpg",
+            "make": "Cooler Master",
+            "model_id": "RR212S20PCR1"
+        }
+    },
+    {
+        "pk": 49,
+        "model": "products.product",
+        "fields": {
+            "sku": "6459383",
+            "name": "Thermaltake - UX100 5V Motherboard ARGB Sync 16.8 Million Colors 15 Addressable LED Intel/AMD Universal CPU Cooler - Black",
+            "description": "Thermaltake UX100 ARGB Lighting CPU Cooler features 9-high air flow blade, hydraulic bearing, and 16.8 million colors of 15 ARGB LEDs that is ready to sync 5V RGB enabled motherboards from ASUS, ASRock, GIGABYTE and MSI. Switching the customized lighting effect easily and get the ultimate gaming experience.",
+            "price": 114.99,
+            "category": 6,
+            "rating": 5.0,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6459/6459383_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6459383.jpg",
+            "make": "Thermaltake",
+            "model_id": "CL-P064-AL12SW-A"
+        }
+    },
+    {
+        "pk": 50,
+        "model": "products.product",
+        "fields": {
+            "sku": "6316584",
+            "name": "Cooler Master - Hyper 212 Black Edition 120mm CPU Cooling Fan - Black",
+            "description": "Stop your CPU from overheating with this Cooler Master Hyper 212 Black Edition fan. The Silent Driver IC technology keeps noise and power consumption to a minimum, and its four heat pipes effectively dissipate hot air. This Cooler Master Hyper 212 Black Edition fan includes a push-pull configuration to exhaust heat faster.",
+            "price": 44.99,
+            "category": 6,
+            "rating": 4.7,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6316/6316584_sa.jpg;maxHeight=640;maxWidth=550",
+            "image": "6316584.jpg",
+            "make": "Cooler Master",
+            "model_id": "RR212S20PKR1"
+        }
+    },
+    {
+        "pk": 51,
+        "model": "products.product",
+        "fields": {
+            "sku": "6408510",
+            "name": "NZXT - Kraken X63 RGB All-in-one 280mm Radiator CPU Liquid Cooling System - Black",
+            "description": "Get optimal gaming performance with this NZXT Kraken cooling fan. The fluid dynamic bearing delivers quiet operation, while the LED ring and rotatable top let you create remarkable visual effects. This NZXT Kraken cooling fan has fine nylon mesh sleeves that protect the tubing for impressive durability, and the CAM integration lets you manage performance with simple button clicks.",
+            "price": 146.99,
+            "category": 6,
+            "rating": 4.7,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6408/6408510_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6408510.jpg",
+            "make": "NZXT",
+            "model_id": "KRAKEN X63"
+        }
+    },
+    {
+        "pk": 52,
+        "model": "products.product",
+        "fields": {
+            "sku": "6422733",
+            "name": "CORSAIR - iCUE H150i ELITE CAPELLIX CPU Cooler - Black",
+            "description": "The CORSAIR iCUE H150i ELITE CAPELLIX Liquid CPU Cooler delivers powerful, low-noise cooling for your CPU, with a 360mm radiator and three CORSAIR ML120 RGB PWM fans controllable between 400 RPM and 2,400 RPM. 33 Ultra-bright CAPELLIX LEDs on the pump head and eight RGB LEDs per fan let you completely personalize your cooler’s look. Connect to the included CORSAIR iCUE Commander CORE and powerful CORSAIR iCUE software to orchestrate synchronized RGB lighting, adjust fan speeds, and enable Zero RPM mode on up to six fans. Easy to install on most major CPU sockets, with a thermally optimized split-flow cold plate and low-noise centrifugal pump for exceptional performance, the H150i ELITE CAPELLIX puts the spotlight on your cooling.",
+            "price": 158.99,
+            "category": 6,
+            "rating": 4.7,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6422/6422733_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6422733.jpg",
+            "make": "CORSAIR",
+            "model_id": "CW-9060048-WW"
+        }
+    },
+    {
+        "pk": 53,
+        "model": "products.product",
+        "fields": {
+            "sku": "5845215",
+            "name": "CORSAIR - Hydro Series 120mm Radiator CPU Liquid Cooling System - Black",
+            "description": "Prevent your computer from overheating with this Corsair Hydro Series liquid CPU cooler. A micro-fin copper cold plate removes heat quickly, and the advanced fan design reduces noise for quiet operation. This Corsair Hydro Series liquid CPU cooler comes prefilled and never needs to be refilled for convenient, long-lasting cooling.",
+            "price": 79.99,
+            "category": 6,
+            "rating": 4.6,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5845/5845215_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "5845215.jpg",
+            "make": "CORSAIR",
+            "model_id": "H60"
+        }
+    },
+    {
+        "pk": 54,
+        "model": "products.product",
+        "fields": {
+            "sku": "6487504",
+            "name": "Alcatel - MC1",
+            "description": "The M.2 SSD Cooler MC1 provides eficient cooling, enabling maximum read/write speed for single and double sided M.2 2288 Modules. Lower temperatures for your M.2 SSD allows an extended lifespan, is compatible with M.2 SSD slot of Playstation",
+            "price": 12.80,
+            "category": 6,
+            "rating": 3.4,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6487/6487504_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6487504.jpg",
+            "make": "Alcatel",
+            "model_id": "BZ002"
+        }
+    },
+    {
+        "pk": 55,
+        "model": "products.product",
+        "fields": {
+            "sku": "6486428",
+            "name": "NZXT - Kraken G12 GPU Mounting Kit",
+            "description": "Quickly mount any Kraken Series liquid cooler onto graphics cards with theKraken G12 mounting kit. It delivers a 40% increase in cooling capacity overstock cooling, and features a newly designed bracket with an easierinstallation process versus the Kraken G10. Plus, the G12 is compatible withmore than 30 liquid coolers on the market.",
+            "price": 34.99,
+            "category": 6,
+            "rating": 3.4,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6486/6486428_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6486428.jpg",
+            "make": "NZXT",
+            "model_id": "RL-KRG12-W1"
+        }
+    },
+    {
+        "pk": 56,
+        "model": "products.product",
+        "fields": {
+            "sku": "6459365",
+            "name": "Thermaltake - UX200 5V Motherboard ARGB Sync 16.8 Million Colors 15 Addressable LED Intel/AMD Universal CPU Cooler - Black",
+            "description": "",
+            "price": 39.99,
+            "category": 6,
+            "rating": 5.0,
+            "image_url": "UX200 ARGB Lighting CPU Cooler comes with the high air flow blades and U-shape copper heatpipes. Built-in ARGB LEDs delivers a vibrant lighting effect that also supports motherboard sync. Compatible with universal Intel and AMD socket.",
+            "image": "6459365.jpg",
+            "make": "Thermaltake",
+            "model_id": "CL-P065-AL12SW-A"
+        }
+    },
+    {
+        "pk": 57,
+        "model": "products.product",
+        "fields": {
+            "sku": "6486225",
+            "name": "Razer - PWM CPU Cooling Fan Controller",
+            "description": "Master your PC’s airflow and noise with the Razer PWM PC Fan Controller. Easily use Razer Synapse software to unlock and customize the pulse width modulation curves for up to 8 fans and enjoy lower noise levels compared to traditional DC powered fan setups.",
+            "price": 49.99,
+            "category": 6,
+            "rating": 3.4,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6486/6486225cv11d.jpg;maxHeight=640;maxWidth=550",
+            "image": "6486225.jpg",
+            "make": "Razer",
+            "model_id": "RZ34-02140700-R3M1"
+        }
+    },
+    {
+        "pk": 58,
+        "model": "products.product",
+        "fields": {
+            "sku": "6411497",
+            "name": "Intel - Core i3-10100 10th Generation 4-Core - 8-Thread - 3.6 GHz (4.3 GHz Turbo) Socket LGA1200 Locked Processor",
+            "description": "",
+            "price": 114.99,
+            "category": 1,
+            "rating": 4.8,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6411/6411497_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6411497.jpg",
+            "make": "Intel",
+            "model_id": "BX8070110100"
+        }
+    },
+    {
+        "pk": 59,
+        "model": "products.product",
+        "fields": {
+            "sku": "6474407",
+            "name": "AMD - Ryzen 5 5600G 6-Core - 12-Thread - (4.4 GHz Max Boost) Unlocked Desktop Processor",
+            "description": "AMD Ryzen™ 5 5600G Desktop Processor (6-core/12-thread, 19MB cache, up to 4.4 GHz max boost) with Radeon™ Graphics",
+            "price": 229.99,
+            "category": 1,
+            "rating": 4.6,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6474/6474407_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6474407.jpg",
+            "make": "AMD",
+            "model_id": "100-100000252BOX"
+        }
+    },
+    {
+        "pk": 60,
+        "model": "products.product",
+        "fields": {
+            "sku": "6459244",
+            "name": "CORSAIR - RMx Series RM850x 80 PLUS Gold Fully Modular ATX Power Supply - Black",
+            "description": "CORSAIR RM850x Series power supplies with EPS12V connectors are built with the highest quality components to deliver 80 PLUS Gold efficient power to your PC. RM850x PSUs use only Japanese 105°C capacitors, for long life and reliability backed by a ten-year warranty. A 135mm magnetic levitation bearing fan ensures high performance coupled with low noise. Wake your computer faster and consume less power with support for Modern Standby sleep mode. Zero RPM mode ensures virtually silent operation at low and medium loads. Fully modular cables make PC builds and upgrades easy, as you need only connect the cables your system requires. An RM850x PSU is quiet, efficient and dependable enough to power your high-performance PC for years to come.",
+            "price": 129.99,
+            "category": 5,
+            "rating": 4.6,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6459/6459244_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6459244.jpg",
+            "make": "CORSAIR",
+            "model_id": "CP-9020200-NA"
+        }
+    },
+    {
+        "pk": 61,
+        "model": "products.product",
+        "fields": {
+            "sku": "6459240",
+            "name": "CORSAIR - CX-M Series CX650M Semi-Modular Low-Noise ATX Power Supply - Black",
+            "description": "CORSAIR CX-M Series Low-Noise Power Supplies offer 80 PLUS Bronze efficiency and semi-modular cabling for reliable, low-noise operation. With Dual EPS12V cables and two/four PCIe 8-pin power connectors, CX-M PSUs have all the connections needed to power today’s most demanding PC upgrades. Japanese 105°C-rated capacitors deliver superb electrical performance and reliability for your system, backed by a five-year warranty. Robust DC-DC conversion ensures clean, consistent power for all your components and peripherals. With a compact 140mm size allowing for great flexibility in build configurations, CX-M Series power supplies deliver reliable power for nearly any build.",
+            "price": 69.99,
+            "category": 5,
+            "rating": 4.8,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6459/6459240_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6459240.jpg",
+            "make": "CORSAIR",
+            "model_id": "CP-9020221-NA"
+        }
+    },
+    {
+        "pk": 62,
+        "model": "products.product",
+        "fields": {
+            "sku": "6449965",
+            "name": "CORSAIR - CX-F RGB Series™ CX750F RGB 80 PLUS Bronze Fully Modular ATX Power Supply - Black",
+            "description": "CORSAIR CX-750F RGB Series fully modular power supplies deliver reliable 80 PLUS Bronze efficient power to your system, alongside vibrant customizable lighting from a 120mm RGB fan boasting eight RGB LEDs and a clean aesthetic. Easily cycle through 10 preset lighting modes, or connect to a CORSAIR iCUE RGB Lighting Controller or compatible motherboard to unlock advanced lighting control over eight individually addressable LEDs. CX-750F RGB Series PSUs are built with 105°C rated Japanese primary capacitors for superb electrical performance, with fully modular cables to make PC builds and upgrades easy. Designed for low-noise operation with near-silent operation at low loads, and supporting Microsoft Modern Standby sleep mode for extremely fast wake-from-sleep times, the CX-750F RGB Series offers low noise power and millions of colors.",
+            "price": 109.99,
+            "category": 5,
+            "rating": 4.7,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6449/6449965_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6449965.jpg",
+            "make": "CORSAIR",
+            "model_id": "CP-9020218-NA"
+        }
+    },
+    {
+        "pk": 63,
+        "model": "products.product",
+        "fields": {
+            "sku": "6346160",
+            "name": "EVGA - BR Series 700W ATX12V /EPS12V 80 Plus Power Supply DC-DC Technology - Black",
+            "description": "The EVGA 700BR Power Supplies are here. Designed with both beginner and enthusiast needs in mind, EVGA power supplies are the best choice to power next generation computers. Combining 700W of continuous power with exceptional performance, stunning efficiency, and reliable quality, the 700W BR power supply is what you need to build a solid foundation for your next system.",
+            "price": 44.99,
+            "category": 5,
+            "rating": 4.6,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6346/6346160cv13d.jpg;maxHeight=640;maxWidth=550",
+            "image": "6346160.jpg",
+            "make": "EVGA",
+            "model_id": "100-BR-0700-K1"
+        }
+    },
+    {
+        "pk": 64,
+        "model": "products.product",
+        "fields": {
+            "sku": "6414267",
+            "name": "Seasonic - SSR-650GB3, 650W 80+ Bronze PSU, ATX12V/EPS12V, Direct Output, Smart & Silent Fan Control, 5 yr Warranty - Black",
+            "description": "Sea Sonic's Bronze Series is an economical choice with great performance and high built-in value.",
+            "price": 64.99,
+            "category": 5,
+            "rating": 4.6,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6414/6414267_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6414267.jpg",
+            "make": "Seasonic",
+            "model_id": "S12III-650"
+        }
+    },
+    {
+        "pk": 65,
+        "model": "products.product",
+        "fields": {
+            "sku": "6459372",
+            "name": "EVGA - G5 Series 1000W ATX12V/ EPS12V 80 Plus Gold Fully Modular Power Supply",
+            "description": "EVGA SuperNOVA 1000 G5, 80 Plus Gold 1000W, Fully Modular, Eco Mode with FDB Fan, 10 Year Warranty, Includes Power ON Self Tester, Compact 150mm Size, Power Supply 220-G5-1000-X1",
+            "price": 209.99,
+            "category": 5,
+            "rating": 5.0,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6459/6459372_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6459372.jpg",
+            "make": "EVGA",
+            "model_id": "220-G5-1000-X1"
+        }
+    },
+    {
+        "pk": 66,
+        "model": "products.product",
+        "fields": {
+            "sku": "6457691",
+            "name": "GAMDIAS - Kratos 750W ATX12V 2.4 80 Plus Gold Non-Modular Power Supply",
+            "description": "Deliver reliable DC power to your gaming PC with this 750W GAMDIAS Kratos power supply. The 30 RGB lighting effects provide spectacular illumination, while the double CPU 4+4 pin connectors boost power for running resource-intensive apps and games. This GAMDIAS Kratos power supply features auto-optimization fan speed for effective temperature regulation.",
+            "price": 99.99,
+            "category": 5,
+            "rating": 3.4,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6457/6457691_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6457691.jpg",
+            "make": "GAMDIAS",
+            "model_id": "KRATOS P1A-750G"
+        }
+    },
+    {
+        "pk": 67,
+        "model": "products.product",
+        "fields": {
+            "sku": "6468880",
+            "name": "PNY - 8TB PCIe Gen 3 x4 Internal Solid State Drive",
+            "description": "The PNY CS2130 M.2 NVMe SSD is an excellent choice for a mainstream NVMe upgrade from a SATA based solid state drive (SSD) in an NVMe enabled PC or MAC desktop or laptop computer. The CS2130 drive is designed to be a high performance SATA SSD replacement to help realize faster boot times, quicker application launches, and better overall system performance. Do more in less time with NVMe; boot up, power down, and load applications up to 6 times faster than with SATA based SSD’s. With no moving parts, the PNY CS2130 M.2 NVMe SSD is highly durable, less likely to fail.",
+            "price": 1129.99,
+            "category": 10,
+            "rating": 5.0,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6468/6468880cv1d.jpg;maxHeight=640;maxWidth=550",
+            "image": "6468880.jpg",
+            "make": "PNY",
+            "model_id": "M280CS2130-8TB-RB"
+        }
+    },
+    {
+        "pk": 68,
+        "model": "products.product",
+        "fields": {
+            "sku": "6385543",
+            "name": "PNY - 1TB Internal SATA Solid State Drive",
+            "description": "Boost your computer's performance with this PNY CS900 internal SSD. The 2.5-inch form factor is ideal for most desktops, while the SATA III interface connects easily to the motherboard. This PNY CS900 internal SSD has a 1TB capacity to hold plenty of documents and media files, and read/write speeds of up to 535/515MB/sec. ensure rapid file access and storage.",
+            "price": 89.99,
+            "category": 10,
+            "rating": 4.9,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6385/6385543_sa.jpg;maxHeight=640;maxWidth=550",
+            "image": "6385543.jpg",
+            "make": "PNY",
+            "model_id": "SSD7CS900-1TB-RB"
+        }
+    },
+    {
+        "pk": 69,
+        "model": "products.product",
+        "fields": {
+            "sku": "6481715",
+            "name": "Crucial - MX500 4TB 3D NAND Internal SATA 2.5\" Solid State Drive",
+            "description": "Start your system in seconds, store up to 4TB of data, and upgrade with an SSD you can count on. Join more and more people who are keeping their family videos, travel photos, music, and important documents on an SSD, and get the near-instant performance and lasting reliability that comes with solid state storage. Upgrade with the Crucial MX500 SSD, a drive built on quality, speed, and security that’s all backed by helpful service and support. Even if you’ve never installed an SSD, don’t fear – our step-by-step guide walks you through the process to make installation easy. It’s worth it.",
+            "price": 359.99,
+            "category": 10,
+            "rating": 3.4,
+            "image_url": "",
+            "image": "6481715.jpg",
+            "make": "Crucial",
+            "model_id": "CT4000MX500SSD1"
+        }
+    },
+    {
+        "pk": 70,
+        "model": "products.product",
+        "fields": {
+            "sku": "9315347",
+            "name": "WD - WD_BLACK Gaming 4TB Internal SATA Hard Drive for Desktops",
+            "description": "Store edited photos, videos, and games on this 3.5-inch Western Digital hard drive. It has dynamic cache for optimizing allocation between reads and writes, and there's plenty of space to store files with its 4TB capacity.",
+            "price": 124.99,
+            "category": 10,
+            "rating": 4.3,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/9315/9315347_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "9315347.jpg",
+            "make": "WD",
+            "model_id": "WDBSLA0040HNC-NRSN"
+        }
+    },
+    {
+        "pk": 71,
+        "model": "products.product",
+        "fields": {
+            "sku": "6387157",
+            "name": "Seagate - IronWolf 4TB Internal SATA NAS Hard Drive with Rescue Data Recovery Services",
+            "description": "Increase your network memory and efficiency with this Seagate IronWolf internal HDD. The 4TB of memory provides lots of storage space for content, while the data transfer speeds of up to 180MB/sec. and a rotational speed of 5900 rpm deliver swift file transfers. This Seagate IronWolf internal HDD has IronWolf Health Management technology to prevent and recover data loss. Seagate equivalent and backward compatible models: ST4000VN008, ST4000VNZ08.",
+            "price": 89.99,
+            "category": 10,
+            "rating": 4.7,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6387/6387157_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6387157.jpg",
+            "make": "Seagate",
+            "model_id": "ST4000VNA08"
+        }
+    },
+    {
+        "pk": 72,
+        "model": "products.product",
+        "fields": {
+            "sku": "6347191",
+            "name": "PNY - Elite-X 1TB USB 3.1 Gen 1 Flash Drive - Black/Blue",
+            "description": "Store a sizable media collection with this PNY Elite-X 1TB USB 3.1 flash drive. Write speeds up to 100MB/sec. and read speeds up to 200MB/sec. offer rapid data transfer, while the push-out design shields the connector for safety. This versatile PNY Elite-X 1TB USB 3.1 flash drive is backward-compatible with USB 3.0 and USB 2.0 ports on Mac and PCs for simple transfers.",
+            "price": 199.99,
+            "category": 10,
+            "rating": 3.4,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6347/6347191_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6347191.jpg",
+            "make": "PNY",
+            "model_id": "P-FD1TBELX-GE"
+        }
+    },
+    {
+        "pk": 73,
+        "model": "products.product",
+        "fields": {
+            "sku": "6452557",
+            "name": "ASUS - ROG MAXIMUS XIII HERO Socket LGA 1200 USB 3.2 Intel Motherboard",
+            "description": "ROG provides you with the very best gaming-audio inputs and outputs, with special shielded designs, and a collection of carefully selected professional-grade audio components",
+            "price": 499.99,
+            "category": 4,
+            "rating": 4.9,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452557_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6452557.jpg",
+            "make": "ASUS",
+            "model_id": "ROG MAXIMUS XIII HERO"
+        }
+    },
+    {
+        "pk": 74,
+        "model": "products.product",
+        "fields": {
+            "sku": "6224903",
+            "name": "EVGA - X299 Dark (Socket LGA2066) USB 3.1 Intel Motherboard",
+            "description": "Overclock with confidence by using this EATX-size EVGA motherboard. It supports up to 64GB of RAM for efficient multitasking capability and Intel's X299 chipset for speedy processing power. This EVGA motherboard has eight native USB 3.0 ports for connecting accessories, and its eight SATA ports provide plenty of room for essential hard drives.",
+            "price": 459.99,
+            "category": 4,
+            "rating": 5.0,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6224/6224903_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6224903.jpg",
+            "make": "EVGA",
+            "model_id": "151-SX-E299-KR"
+        }
+    },
+    {
+        "pk": 75,
+        "model": "products.product",
+        "fields": {
+            "sku": "6485048",
+            "name": "MSI - AMD Radeon RX 6700 XT GAMING X 12G - 12GB GDDR6 - PCI Express 4.0 - Graphics Card",
+            "description": "THE GAMING YOU KNOW & TRUST The latest iteration of MSI’s iconic GAMING series once again brings performance, low-noise efficiency, and aesthetics that hardcore gamers have come to recognize and trust. Now you too can enjoy all your favorite games with a powerful graphics card that stays cool and silent. Just the way you like it. It’s time to put on team colors. Synchronize lighting with other compatible devices to take the light show to another level. Going dark is as easy as turning the lights off. WE KEEP IT COOL AND QUIET The TWIN FROZR 8 thermal system has been designed for efficiency. Expect a perfect balance of cool and quiet for more fun during endless gaming sessions. TORX FAN 4.0 is built on teamwork, with pairs of fan blades bound together with an outer ring design link that focuses airflow into the updated TWIN FROZR 8 cooling system. Core Pipes are precision-machined for maximum contact over the GPU and spread the heat along the full length of the heatsink for optimal cooling. Stay stealthy with Airflow Control that improves airflow dynamics. Deflectors provide additional surface area and guide air to where it’s needed for maximum cooling. Wave-curved 2.0 fin edges disrupt unwanted airflow harmonics resulting in reduced noise.",
+            "price": 899.99,
+            "category": 3,
+            "rating": 5.0,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6485/6485048_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6485048.jpg",
+            "make": "MSI",
+            "model_id": "Radeon RX 6700 XT GAMING X 12G"
+        }
+    },
+    {
+        "pk": 76,
+        "model": "products.product",
+        "fields": {
+            "sku": "6453896",
+            "name": "GIGABYTE - AMD Radeon RX 6800 XT GAMING OC 16GB GDDR6 PCI Express 4.0 Graphics Card",
+            "description": "GIGABYTE AMD Radeon RX 6800 XT GAMING OC 16G graphics card delivers ultra-high frame rates and serious 4K gameplay. Get the ultimate gaming experience with powerful new compute units, amazing AMD Infinity Cache, and up to 16GB of dedicated GDDR6 memory. And, when paired with an AMD Ryzen 5000 Series desktop processor, AMD Smart Access Memory technology offers new levels of gaming performance.",
+            "price": 1319.99,
+            "category": 3,
+            "rating": 5.0,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6453/6453896_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6453896.jpg",
+            "make": "GIGABYTE",
+            "model_id": "GV-R68XTGAMING OC-16GD"
+        }
+    },
+    {
+        "pk": 77,
+        "model": "products.product",
+        "fields": {
+            "sku": "6468934",
+            "name": "GIGABYTE - AMD Radeon RX 6900 XT 16G GAMING OC GDDR6 PCI Express 4.0 Graphics Card -Black",
+            "description": "GIGABYTE AMD Radeon RX 6900 XT GAMING OC 16G graphics card delivers ultra-high frame rates and serious 4K gameplay. Get the ultimate gaming experience with powerful new compute units, amazing AMD Infinity Cache, and up to 16GB of dedicated GDDR6 memory. And, when paired with an AMD Ryzen 5000 Series desktop processor, AMD Smart Access Memory technology offers new levels of gaming performance.",
+            "price": 899.99,
+            "category": 3,
+            "rating": 5.0,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6468/6468934_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6468934.jpg",
+            "make": "GIGABYTE",
+            "model_id": "GV-R69XTGAMING OC-16GD"
+        }
+    },
+    {
+        "pk": 78,
+        "model": "products.product",
+        "fields": {
+            "sku": "6481354",
+            "name": "CyberPowerPC - Gamer Xtreme Desktop - Intel Core i7-11700F - 16GB Memory - NVIDIA GeForce RTX 3060 Ti - 1TB HDD + 500GB SSD - Black",
+            "description": "One-up the competition with this CyberPowerPC Gamer Xtreme gaming desktop. The 500GB SSD and 1TB HDD offer rapid app loading and ample storage space for your collection, while the Intel Core i7 processor and 16GB of RAM support effortless multitasking. This CyberPowerPC Gamer Xtreme gaming desktop features an NVIDIA GeForce RTX 3060 Ti graphics card for high frame rates when gaming.",
+            "price": 1599.99,
+            "category": 9,
+            "rating": 4.6,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6481/6481354cv15d.jpg;maxHeight=640;maxWidth=550",
+            "image": "6481354.jpg",
+            "make": "CyberPowerPC",
+            "model_id": "GXi3400BSTV8"
+        }
+    },
+    {
+        "pk": 79,
+        "model": "products.product",
+        "fields": {
+            "sku": "6476717",
+            "name": "Lenovo - Legion Tower 5 AMD Gaming Desktop - AMD Ryzen 7-5700G - 16GB Memory - NVIDIA GeForce RTX 3060 - 512GB SSD + 1TB HDD - Raven Black",
+            "description": "Engineered out of a passion for savage power and unmatched speed, the Lenovo Legion Tower 5 AMD delivers mind-blowing performance that combines AMD Ryzen processors and top-of-the-line NVIDIA GeForce graphics cards for blazing-fast frame rates at up to 4K resolution. Pushing far beyond the upper bounds of smaller rig configurations while keeping things cool and whisper quiet, the Legion Tower 5 is a marvel of build and design, accentuated by its illuminated blue LED logo and lighting, as well a transparent side panel that can properly showcase your internals.",
+            "price": 1449.99,
+            "category": 9,
+            "rating": 4.3,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6476/6476717_rd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6476717.jpg",
+            "make": "Lenovo",
+            "model_id": "90RB001LUS"
+        }
+    },
+    {
+        "pk": 80,
+        "model": "products.product",
+        "fields": {
+            "sku": "6483421",
+            "name": "iBUYPOWER - TraceMR Gaming Desktop - Intel i7 11700F - 16GB Memory - NVIDIA RTX 3060Ti 8GB - 480GB SSD + 1TB HDD",
+            "description": "Upgrade your current gaming rig with this iBUYPOWER Desktop. It’s 16GB of RAM and Intel i7-11700F processor let you run multiple programs at once, and its NVIDIA RTX 3060Ti card renders fast-paced action smoothly without screen tearing. This iBUYPOWER desktop also has a 480GB solid state drive and 1TB hard drive for saving your favorite games.",
+            "price": 1599.99,
+            "category": 9,
+            "rating": 4.1,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6483/6483421cv2d.jpg;maxHeight=640;maxWidth=550",
+            "image": "6483421.jpg",
+            "make": "iBUYPOWER",
+            "model_id": "TraceMR223i"
+        }
+    },
+    {
+        "pk": 81,
+        "model": "products.product",
+        "fields": {
+            "sku": "6360459",
+            "name": "CybertronPC - BLU-Print Desktop - AMD Ryzen ThreadRipper 2990WX - 128GB Memory - 1TB Solid State Drive + 4 x 1TB Solid State Drives - Black/RGB",
+            "description": "CybertronPC BLU-Print Desktop: Create the ultimate workstation with this Cybertron PC BLU-Print workstation desktop. The dual QUADRO RTX 6000 graphics cards render projects with blazing speed and in extreme detail, while the 1TB NVME M.2 and four 1TB SSDs in RAID 10 configuration offer fast load times. This Cybertron PC BLU-Print workstation desktop has a 32-core AMD Ryzen Threadripper 2990WX processor for heavy multitasking and video production.",
+            "price": 17369.99,
+            "category": 9,
+            "rating": 3.9,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6360/6360459_rd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6360459.jpg",
+            "make": "CybertronPC",
+            "model_id": "TCMBPTQDH9402BM"
+        }
+    },
+    {
+        "pk": 82,
+        "model": "products.product",
+        "fields": {
+            "sku": "6477879",
+            "name": "HP OMEN - 30L Gaming Desktop - AMD Ryzen 5 - 16GB Memory - NVIDIA® GeForce RTX™ 3060 - 1TB SSD - Shadow Black",
+            "description": "With great power comes this: The OMEN 30L Gaming Desktop PC lives for the thrill of the chase, never leaves a friend behind, and makes a mean midnight snack of action and adventure. Meet your new best friend, packing an AMD Ryzen™ processor and a NVIDIA® GeForce® RTX graphics card. Do how you do: OMEN Gaming Hub’s growing list of customization and optimization features gives you the power to dial-in your game and tailor-make your mark. With OMEN Light Studio, you can tailor make everything with your mark. Your game never looked so good: Sure, it's what's inside that counts, but it's what's outside that gets the looks. With tempered glass front and side panels, a full-metal frame, and complete RGB control, we made this PC for people who know that style points count on the final scoreboard of life.",
+            "price": 1349.99,
+            "category": 9,
+            "rating": 4.0,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6477/6477879_sd.jpg",
+            "image": "6477879.jpg",
+            "make": "HP",
+            "model_id": "GT13-1174"
+        }
+    },
+    {
+        "pk": 83,
+        "model": "products.product",
+        "fields": {
+            "sku": "6464203",
+            "name": "ASUS - ROG 16\" WQXGA 165Hz Gaming Laptop - Intel Core i9 - 16GB Memory - NVIDIA RTX3060 - 1TB SSD - Off Black",
+            "description": "ASUS ROG Gaming Laptop. Enjoy everyday gaming with this ASUS notebook PC. The 11th Gen Intel Core i9 processor and 16GB of RAM let you run graphics-heavy games smoothly, while the potent NVIDIA RTX3060 graphics produce high-quality visuals on the new fast 16-inch 165hz WQXGA display. This ASUS notebook PC has 1TB SSD that shortens load times and offers ample storage.",
+            "price": 1849.99,
+            "category": 9,
+            "rating": 4.1,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464203_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6464203.jpg",
+            "make": "ASUS",
+            "model_id": "GU603HM-211.ZM16"
+        }
+    },
+    {
+        "pk": 84,
+        "model": "products.product",
+        "fields": {
+            "sku": "6463823",
+            "name": "GIGABYTE - 15.6\" 4K OLED Creator Laptop - Intel Core i7-11800H - 16GB - NVIDIA GeForce RTX 3060 1TB SSD",
+            "description": "AERO laptops reach the balance between high performance and portability, which is crucial for creators. They are equipped with the latest CPU that integrates the Thunderbolt 4 interface and supports new PCIe Gen4 SSDs as well as Wi-Fi 6, resulting in significant enhancements in performance and transmission rate. AERO laptops also possess world-leading dual-certified color calibrated displays with X-Rite™ color calibration and Pantone® Validated certification. Render quicker, broadcast clearer, and edit videos better with NVIDIA GPUs in Studio laptops and desktops.",
+            "price": 1249.99,
+            "category": 9,
+            "rating": 4.1,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6463/6463823_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6463823.jpg",
+            "make": "GIGABYTE",
+            "model_id": "AERO 15 OLED KD-72US624SP"
+        }
+    },
+    {
+        "pk": 85,
+        "model": "products.product",
+        "fields": {
+            "sku": "6469408",
+            "name": "MSI - 17.3\" Gaming Laptop - Intel Core i9 - 32 GB Memory - NVIDIA RTX A5000 - 1 TB SSD - Titanium Blue",
+            "description": "MSI mobile workstation offers you a reliable and versatile solution for boosting your workflow from concept to final production. Seamlessly work on large-scale computations and graphics-intensive applications. MSI Mobile workstations are ISV certified systems, which ensures that both hardware and software are fully stable and compatible for a professional experience.",
+            "price": 3999.99,
+            "category": 9,
+            "rating": 4.2,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6469/6469408_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6469408.jpg",
+            "make": "MSI",
+            "model_id": "WE76459"
+        }
+    },
+    {
+        "pk": 86,
+        "model": "products.product",
+        "fields": {
+            "sku": "6365994",
+            "name": "NZXT - H710i eATX Mid-Tower Case with Tempered Glass - Red/Matte Black",
+            "description": "Create a professional-grade PC with this black and red NZXT ATX mid-tower case. The front panel USB-C connector supports the connection of USB 3.1 Gen 2 devices to a front-facing port, while the NZXT CAM application lets you monitor the installation process. This NZXT ATX mid-tower case has a GPU mounting bracket to showcase your graphics card.",
+            "price": 207.99,
+            "category": 7,
+            "rating": 4.8,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6365/6365994_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6365994.jpg",
+            "make": "NZXT",
+            "model_id": "CA-H710I-BR"
+        }
+    },
+    {
+        "pk": 87,
+        "model": "products.product",
+        "fields": {
+            "sku": "6459487",
+            "name": "Thermaltake - Level 20 RS Motherboard Sync ARGB ATX Mid Tower Gaming Computer Case with 2 200mm RGB Fans + 140mm Rear Fan - Black",
+            "description": "Inspired by sports cars, the Level 20 RS ARGB has a rising top panel that cleverly hides the I/O ports on its side; The ARGB light bar shown on its front perfectly mimics the afterimage of a car’s tail light. It features two tempered glass panels, ATX motherboard support, patented PCI-E slot design and a removable power cover. The Level 20 RS ARGB comes with two preinstalled 200mm 5V ARGB front fans and one 120mm standard rear fan. The front fans are addressable to deliver 16.8 million-color RGB illumination and unparalleled ventilation. By choosing Thermaltake Level 20 RS ARGB, users can experience the best liquid cooling expansion and advanced cable management. Get ready for your race by choosing the new Level 20 RS ARGB. The Level 20 RS ARGB takes our latest case innovations and wraps them in an ultra-modern and sports style that’s utterly unique in the case market today. Stand out from the crowd with the Level 20 RS.",
+            "price": 179.99,
+            "category": 7,
+            "rating": 4.0,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6459/6459487cv11d.jpg;maxHeight=640;maxWidth=550",
+            "image": "6459487.jpg",
+            "make": "Thermaltake",
+            "model_id": "CA-1P8-00M1WN-00"
+        }
+    },
+    {
+        "pk": 88,
+        "model": "products.product",
+        "fields": {
+            "sku": "5905121",
+            "name": "Azza CSAZ-804V Pyramid Innovative PC Case W/RGB Fan, Black",
+            "description": "The innovative Pyramid 804 receives an update! Why have an average case, when your case can be extraordinary? Enter the AZZA Pyramid 804V, with its unique pyramid shape design and pleasing aesthetic. The case features four tempered glass side panels on all four faces, allowing you to show off your beautiful build from all angles. A 120mm Hurricane II digital RGB fan is included, letting you customize its color to your heart’s content. The Pyramid 804V is not just for show: it is able to support most builds that would fit inside any conventional mid-tower case, such as an EATX motherboard, 300mm long video card, 2x2.5” drive bays, 1x3.5” drive bay, and water cooling radiators up to 360mm on the bottom of the case. As this is an updated version of the original 804 model, the 804V allows the video card to be inserted directly into the motherboard without the need for an extension cable, resulting in it being mounted the way it's supposed to. No matter which way you go with this case, it will prove to be a functional and eye-pleasing case in any circumstance.",
+            "price": 249.99,
+            "category": 7,
+            "rating": 4.8,
+            "image_url": "https://m.media-amazon.com/images/I/51DbJJr0iFL._AC_SL1000_.jpg",
+            "image": "5905121.jpg",
+            "make": "AZZA",
+            "model_id": "CSAZ-804V Pyramid"
+        }
+    },
+    {
+        "pk": 89,
+        "model": "products.product",
+        "fields": {
+            "sku": "6484768",
+            "name": "CORSAIR - DOMINATOR PLATINUM RGB 32GB (2Pk 16GB) 5.2GHz DDR5 DIMM Desktop Memory Kit - Black",
+            "description": "Push the limits of performance with CORSAIR DOMINATOR PLATINUM RGB DDR5 Memory optimized for Intel®. DDR5 delivers higher frequencies and greater capacities than previous generation memory, helping your system power through complex tasks faster than ever before. With world-renowned design lit by 12 ultra-bright CAPELLIX RGB LEDs, DOMINATOR PLATINUM RGB DDR5 complements the styling and power of the most high-end systems. Hand-sorted, tightly screened memory chips and a custom PCB cooled by patented DHX cooling technology ensure consistently high performance. CORSAIR iCUE software enables RGB lighting customization and synchronization, real-time performance information, and onboard voltage regulation for easier, more controlled overclocking. Supporting Intel XMP 3.0 and backed by a limited lifetime warranty, DOMINATOR PLATINUM RGB DDR5 is in a class of its own.",
+            "price": 329.99,
+            "category": 2,
+            "rating": 3.7,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6484/6484768_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6484768.jpg",
+            "make": "CORSAIR",
+            "model_id": "CMT32GX5M2B5200C38"
+        }
+    },
+    {
+        "pk": 90,
+        "model": "products.product",
+        "fields": {
+            "sku": "6484767",
+            "name": "CORSAIR - VENGEANCE 32GB (2Pk 16GB) 5.2GHz DDR5 DIMM Desktop Memory Kit - Black",
+            "description": "CORSAIR VENGEANCE DDR5, optimized for Intel® motherboards, delivers the higher frequencies and greater capacities of DDR5 technology in a high-quality, compact module that suits your system. Tightly-screened high-frequency memory chips power your PC through faster processing, rendering, and buffering than ever, with onboard voltage regulation for easy, finely controlled overclocking. CORSAIR iCUE software enables real-time frequency monitoring, onboard voltage regulation, and Intel XMP 3.0 profile customization. A distinctive solid aluminum heatspreader keeps your memory cool, while ensuring wide compatibility with a huge range of motherboards and CPU coolers. With a limited lifetime warranty as your guarantee of reliability for years to come, VENGEANCE DDR5 continues a long-standing legacy of memory performance.",
+            "price": 289.99,
+            "category": 2,
+            "rating": 4.1,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6484/6484767_sd.jpg;maxHeight=640;maxWidth=550",
+            "image": "6484767.jpg",
+            "make": "CORSAIR",
+            "model_id": "CMK32GX5M2B5200C38"
+        }
+    },
+    {
+        "pk": 91,
+        "model": "products.product",
+        "fields": {
+            "sku": "6455442",
+            "name": "ADATA - XPG SPECTRIX D50 16GB 2x8GB 3.2GHz CL16 RGB Desktop Memory - Gray",
+            "description": "Reaching speeds of up to 4800MHz and sporting a maximum capacity of 32GB, the XPG SPECTRIX D50 is a monster of a memory module. It also has looks to kill with an elegant styling with geometric lines. Made with only the highest quality chips and PCBs, the D50 provides ultimate stability, reliability, and speeds of up to 4800MHz. What’s more, it supports the latest Intel X299 and AMD TR40 platforms. The D50 sports a solidly constructed 1.95mm-thick metal heatsink for excellent durability. The D50 features a clean and elegant exterior with simple geometric lines and a triangular RGB panel that fits in perfectly with the modules overall design. With the XPG RGB Sync app or a RGB software from a major motherboard brand, switch between three RGB modes - Static, Breathing, and Comet. In addition to the three modes, you can also set it to Music mode to sync with your favorite jams. The D50 supports Intel XMP 2.0 for hassle-free and stable overclocking without the need to go into BIOS.",
+            "price": 79.99,
+            "category": 2,
+            "rating": 4.3,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6455/6455442_sd.jpg",
+            "image": "6455442.jpg",
+            "make": "ADATA",
+            "model_id": "AX4U32008G16A-DT50"
+        }
+    },
+    {
+        "pk": 92,
+        "model": "products.product",
+        "fields": {
+            "sku": "6485681",
+            "name": "GIGABYTE - Z690 AORUS MASTER Socket 1700 USB 3.2 Intel Motherboard with RGB Lighting - Black",
+            "description": "The King of Gaming is here. The Z690 AORUS MASTER supports 12th Gen Intel Processors and unparalled performance. GIGABYTE Z690 motherboards come with upgraded power design, high grade storage standards, and outstanding connectivity that enables you to optimize your performance.",
+            "price": 469.99,
+            "category": 4,
+            "rating": 5.0,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6485/6485681cv11d.jpg;maxHeight=640;maxWidth=550",
+            "image": "6485681.jpg",
+            "make": "Z690 AORUS MASTER",
+            "model_id": "GIGABYTE"
+        }
+    },
+    {
+        "pk": 93,
+        "model": "products.product",
+        "fields": {
+            "sku": "6475157",
+            "name": "NZXT - Z590 (Socket LGA 1200) USB 3.2 Intel Motherboard with Wifi",
+            "description": "Designed around Intel’s Z590 chipset, the N7 Z590 lays the groundwork for a stunning gaming PC build. Features include built-in Wi-Fi 6E connectivity, integrated fan controller, RGB accessories supported across all manufacturers, and more. The motherboard cover perfectly matches the color and finish of your NZXT case, creating a visually seamless backdrop for your components.",
+            "price": 284.99,
+            "category": 4,
+            "rating": 4.5,
+            "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6475/6475157cv14d.jpg;maxHeight=640;maxWidth=550",
+            "image": "6475157.jpg",
+            "make": "NZXT",
+            "model_id": "N7-Z59XT-W1"
+        }
+    }
+]
