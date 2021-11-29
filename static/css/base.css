@@ -10,19 +10,56 @@ html {
 }
 
 body {
-    margin-top: 192px;
     background: url('/media/main-bg.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: 100vh;
+    height: calc(100vh - 300px);
 }
 
 header {
     background: linear-gradient(90deg, #cc2b5e, #753a88);
-    height: 62px;
 }
+
 .bg-shroud {
     background-color: rgb(255, 255, 255, 0.7);
 }
+
 #home-link-right {
     margin-top: 250px;
+}
+
+.img-container {
+    float: left;
+    width:  14rem;
+    height: 14rem;
+    overflow: hidden;
+}
+
+.product-img {
+    float: left;
+    width:  14rem;
+    height: 14rem;
+    object-fit: cover;
+    overflow: hidden; 
+}
+
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.header-container {
+    padding-top: 100px;
 }
