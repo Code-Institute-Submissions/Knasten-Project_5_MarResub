@@ -13,24 +13,19 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
-            {% for c in categories %}
-                <div class="col-1">
-                    <a href=" products/{{ c }}">{{ c.friendly_name|upper }}</a>
-                </div>
-            {% endfor %}
         </div>
         <div class="row">
             {% for product in products %}
                 <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-5">
                     <div class="card rounded h-100">
                         {% if product.image %}
-                        <div class="wrapper d-flex justify-content-center">
+                        <div class="wrapper d-flex justify-content-center mt-3">
                             <a href="#" class="product-link">
                                 <img class="card-img-top product-img" src="{{ product.image.url }}" alt="{{ product.name }}">
                             </a>
                         </div>
                         {% else %}
-                        <div class="wrapper d-flex justify-content-center">
+                        <div class="wrapper d-flex justify-content-center mt-3">
                             <a class="product-link">
                                 <img class="card-img-top img-responsive" src="" alt="{{ product.name }}">
                             </a>
