@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 offset-3 bg-white">
+                <div class="d-flex justify-content-center m-3">
+                    <img class="product-detail-img img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 offset-3 bg-white">
+                <p>{{ product.description }}</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

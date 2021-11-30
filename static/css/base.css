@@ -44,10 +44,6 @@ header {
     object-fit: cover;
 }
 
-.wrapper {
-    text-align: center;
-}
-
 .product-link {
     display: block;
 }
