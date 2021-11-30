@@ -1,13 +1,17 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block page_header %}
+
+{% endblock %}
+
 {% block content %}
-    <div class="container h-100">
+    <div class="container index-container h-100">
         <div class="row">
             <div class="col-lg-4 py-2 bg-shroud">
                 <h3 class="text-uppercase text-center">Get your new gaming gear from us!</h3>
                 <hr>
-                <a href="#">
+                <a href="{% url 'products' %}">
                     <button class="btn btn-lg btn-outline-success bg-dark my-2" type="submit">Browse our inventory!</button>
                 </a>
             </div>

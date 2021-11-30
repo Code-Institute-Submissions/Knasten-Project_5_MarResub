@@ -13,38 +13,43 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
+            {% for c in categories %}
+                <div class="col-1">
+                    <a href=" products/{{ c }}">{{ c.friendly_name|upper }}</a>
+                </div>
+            {% endfor %}
         </div>
         <div class="row">
             {% for product in products %}
                 <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-5">
-                    <div class="card h-100">
+                    <div class="card rounded h-100">
                         {% if product.image %}
-                        <div class="wrapper text-center">
-                            <a href="#">
+                        <div class="wrapper d-flex justify-content-center">
+                            <a href="#" class="product-link">
                                 <img class="card-img-top product-img" src="{{ product.image.url }}" alt="{{ product.name }}">
                             </a>
                         </div>
                         {% else %}
-                        <div class="wrapper w-75 text-center">
-                            <a class="product-img">
+                        <div class="wrapper d-flex justify-content-center">
+                            <a class="product-link">
                                 <img class="card-img-top img-responsive" src="" alt="{{ product.name }}">
                             </a>
                         </div>
                         {% endif %}
-                        <div class="card-body">
+                        <div class="card-body mt-3">
                             <div class="row">
                                 <h5>{{ product.name }}</h3>
                             </div>
-                            <div class="row">
+                            <div class="row pt-3">
                                 <small class="text-muted">{{ product.model_id }}</small>
                             </div>
-                            <div class="row">
+                            <div class="row pt-3 ">
                                 <span>{{ product.rating }} <i class="fas fa-star"></i></span>
                             </div>
                             
                         </div>
-                        <div class="card-footer">
-                            <p>${{ product.price }}</p>
+                        <div class="card-footer bg-white">
+                            <strong><p>${{ product.price }}</p></strong>
                         </div>
                     </div>
                 </div>

@@ -12,7 +12,6 @@ html {
 body {
     background: url('/media/main-bg.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 300px);
 }
 
 header {
@@ -21,6 +20,10 @@ header {
 
 .bg-shroud {
     background-color: rgb(255, 255, 255, 0.7);
+}
+
+.index-container {
+    margin-top: 148px;
 }
 
 #home-link-right {
@@ -37,11 +40,16 @@ header {
 .product-img {
     float: left;
     width:  14rem;
-    height: 14rem;
+    height: auto;
     object-fit: cover;
-    overflow: hidden; 
 }
 
+.wrapper {
+    text-align: center;
+}
+
+.product-link {
+    display: block;
 }
 
 .overlay {
@@ -50,7 +58,7 @@ header {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: white;
+	background: #d1cfcf;
 	z-index: -1;
 }
 
@@ -62,4 +70,14 @@ header {
 
 .header-container {
     padding-top: 100px;
+}
+
+
+/* -------------------------- MEDIA QUERIES --- */
+@media only screen and (max-width: 369px)  {
+
+#navbar-button {
+    margin-bottom: 8px; !important
+}
+
 }
