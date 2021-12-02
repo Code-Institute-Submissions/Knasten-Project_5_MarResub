@@ -34,7 +34,7 @@ def all_products(request):
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sort = f'-{sort}'
-                products = products.order_by(sort)
+            products = products.order_by(sort)
 
     selected_sorting = f'{sort}_{direction}'
 
