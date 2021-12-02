@@ -51,16 +51,16 @@
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                     <a class="dropdown-item" href="{% url 'products' %}">All Products</a>
-                                    <a class="dropdown-item" href="{% url 'products' %}">Graphics Cards</a>
-                                    <a class="dropdown-item" href="{% url 'products' %}">Processors</a>
-                                    <a class="dropdown-item" href="{% url 'products' %}">RAM</a>
-                                    <a class="dropdown-item" href="{% url 'products' %}">Internal Storage</a>
-                                    <a class="dropdown-item" href="{% url 'products' %}">Cooling & Fans</a>
-                                    <a class="dropdown-item" href="{% url 'products' %}">Powersupplies</a>
-                                    <a class="dropdown-item" href="{% url 'products' %}">Motherboards</a>
-                                    <a class="dropdown-item" href="{% url 'products' %}">Monitors</a>
-                                    <a class="dropdown-item" href="{% url 'products' %}">Computers</a>
-                                    <a class="dropdown-item" href="{% url 'products' %}">Cases</a>
+                                    <a class="dropdown-item" href="{% url 'products' %}?category=gpu">Graphics Cards</a>
+                                    <a class="dropdown-item" href="{% url 'products' %}?category=cpu">Processors</a>
+                                    <a class="dropdown-item" href="{% url 'products' %}?category=ram">RAM</a>
+                                    <a class="dropdown-item" href="{% url 'products' %}?category=storage">Internal Storage</a>
+                                    <a class="dropdown-item" href="{% url 'products' %}?category=cooling">Cooling & Fans</a>
+                                    <a class="dropdown-item" href="{% url 'products' %}?category=psu">Powersupplies</a>
+                                    <a class="dropdown-item" href="{% url 'products' %}?category=mb">Motherboards</a>
+                                    <a class="dropdown-item" href="{% url 'products' %}?category=monitors">Monitors</a>
+                                    <a class="dropdown-item" href="{% url 'products' %}?category=computers">Computers</a>
+                                    <a class="dropdown-item" href="{% url 'products' %}?category=cases">Cases</a>
                                 </ul>
                             </div>
                             {% if request.user.is_authenticated %}
