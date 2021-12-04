@@ -45,17 +45,35 @@
                         <div class="card-body mt-3">
                             <div class="row">
                                 <h5>{{ product.name }}</h3>
+                                {% if product.category %}
+                                    <p class="mt-2 mb-0">
+                                    <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
+                                        <i class="fas fa-tag mr-1"> {{ product.category.friendly_name }}</i>
+                                    </a>
+                                    </p>
+                                {% endif %}
                             </div>
-                            <div class="row pt-3">
-                                <small class="text-muted">{{ product.model_id }}</small>
+                            <hr>
+                            {% if product.description %}
+                                <div class="row">
+                                    <a href="{% url 'product_detail' product.id %}" class="text-decoration-none text-dark">
+                                        <p class="mt-3">{{ product.description|truncatechars:100 }}</p>
+                                    </a>
+                                </div>
+                            {% else %}
+                            <div class="row">
+                                <a href="{% url 'product_detail' product.id %}" class="text-decoration-none text-dark">
+                                    <p class="mt-3">Sorry but we currently do not have any description regarding this product!</p>
+                                </a>
                             </div>
-                            <div class="row pt-3 ">
-                                <span>{{ product.rating }} <i class="fas fa-star"></i></span>
-                            </div>
-                            
+                            {% endif %}
                         </div>
-                        <div class="card-footer bg-white">
+                        <div class="row ms-1 mb-2">
+                            <small class="text-muted">Model: {{ product.model_id }}</small>
+                        </div>
+                        <div class="card-footer bg-white d-flex justify-content-between">
                             <strong><p>${{ product.price }}</p></strong>
+                            <span class="me-2">{{ product.rating }} <i class="fas fa-star"></i></span>
                         </div>
                     </div>
                 </div>
