@@ -21,7 +21,7 @@
                     <option value="rating_asc" {% if selected_sorting == 'rating_asc' %}selected{% endif %}>Rating Ascending</option>
                     <option value="rating_desc" {% if selected_sorting == 'rating_desc' %}selected{% endif %}>Rating Descending</option>
                     <option value="category_asc" {% if selected_sorting == 'category_asc' %}selected{% endif %}>Category (A-Z)</option>
-                    <option value="category_desc" {% if selected_sorting == 'category_desc' %}selected{% endif %}>Category (A-Z)</option>
+                    <option value="category_desc" {% if selected_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
                 </select>
             </div>
         </div>
@@ -36,7 +36,7 @@
                             </a>
                         </div>
                         {% else %}
-                        <div class="wrapper d-flex justify-content-center mt-3">
+                        <div class="d-flex justify-content-center mt-3">
                             <a class="product-link">
                                 <img class="card-img-top img-responsive" src="" alt="{{ product.name }}">
                             </a>

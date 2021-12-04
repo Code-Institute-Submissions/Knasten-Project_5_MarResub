@@ -9,8 +9,9 @@ def all_products(request):
 
     products = Product.objects.all()
     categories = Category.objects.all()
-    query = None  # Needed to make sure it dosent bug, when not entering a seach value.
+    query = None  # Needed to make sure it dosent bug, when not entering a search value.
     sort = None
+    sortTwo = None
     direction = None
 
     if request.GET:
@@ -19,7 +20,7 @@ def all_products(request):
             if not query:
                 messages.error(request, "Please enter some keywords to search for!")
                 return redirect(reverse('products'))
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(name__icontains=query) | Q(description__icontains=query) | Q(sku__contains=query)
             products = products.filter(queries)
 
         if 'category' in request.GET:
@@ -29,12 +30,13 @@ def all_products(request):
 
         if 'sort' in request.GET:
             sort = request.GET['sort']
+            sortTwo = sort
 
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
-                    sort = f'-{sort}'
-            products = products.order_by(sort)
+                    sortTwo = f'-{sort}'
+            products = products.order_by(sortTwo)
 
     selected_sorting = f'{sort}_{direction}'
 

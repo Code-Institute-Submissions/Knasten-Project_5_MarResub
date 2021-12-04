@@ -1,3 +1,4 @@
+
 {% extends "base.html" %}
 {% load static %}
 
@@ -29,23 +30,64 @@
                 <table class="table">
                     <thead>
                       <tr>
-                        <th scope="col">List Item</th>
-                        <th scope="col">SKU</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Quantity</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Subtotal</th>
+                        <th style="width: 15%;" scope="col">Image</th>
+                        <th style="width: 15%;" scope="col">SKU</th>
+                        <th style="width: 25%;" scope="col">Name</th>
+                        <th style="width: 25%;" scope="col">Quantity</th>
+                        <th style="width: 10%;" scope="col">Price</th>
+                        <th style="width: 10%;" scope="col">Subtotal</th>
                       </tr>
                     </thead>
                     <tbody>
                         {% for item in cart_items %}
                             <tr>
-                                <th scope="row">{{ forloop.counter }}</th>
-                                <td>{{ item.product.sku }}</td>
-                                <td>{{ item.product.name }}</td>
-                                <td>{{ item.quantity }}</td>
-                                <td>{{ item.product.price }}</td>
-                                <td>${{ item.product.price }}</td>
+                                <th class="py-5" scope="row"><img class="product-cart-img" src="{{ item.product.image.url }}" alt="{{ item.product.name }}"></th>
+                                <td class="py-5"><strong><p>{{ item.product.sku }}</p></strong></td>
+                                <td class="py-5">{{ item.product.name }}</td>
+                                <td class="py-5">
+                                    <div class="row">
+                                        <div class="col-3 offset-1">
+                                            <strong><p>{{ item.quantity }}</p></strong>
+                                        </div>
+                                        <div class="col-8">
+                                            <form class="form update-form" method="POST" action="{% url 'change_cart' item.product.id %}">
+                                                {% csrf_token %}
+                                                <div class="form-group">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <button class="decrement-qty btn btn-sm rounded-0"
+                                                                data-item_id="{{ item.product.id }}" id="decrement-qty_{{ item.product.id }}">
+                                                                <span>
+                                                                    <i class="fas fa-minus fa-sm"></i>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                        <input class="form-control form-control-sm qty_input" type="number"
+                                                            name="quantity" value="{{ item.quantity }}" min="1" max="99"
+                                                            data-item_id="{{ item.product.id }}" id="id_qty_{{ item.product.id }}">
+                                                        <div class="input-group-append">
+                                                            <button class="increment-qty btn btn-sm rounded-0"
+                                                                data-item_id="{{ item.product.id }}" id="increment-qty_{{ item.product.id }}">
+                                                                <span>
+                                                                    <i class="fas fa-plus fa-sm"></i>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <a class="update-product text-info ms-3 mt-3"><small>Update</small></a>
+                                                    <a class="text-danger remove-product me-3 mt-3" id="remove_{{ item.product.id }}">
+                                                        <i class="mx-1 fa-fw far fa-trash-alt"></i>
+                                                    </a>
+                                                </div>
+                                            </form>
+                                            
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="py-5">${{ item.product.price }}</td>
+                                <td class="py-5">${{ item.product.price }}</td>
                             </tr>
                         {% endfor %}
                     </tbody>
@@ -67,4 +109,27 @@
 {% block postloadjs %}
 {{ block.super }}
 {% include 'products/includes/qty_script.html' %}
+
+<script type="text/javascript">
+    $('.update-product').click(function (e) {
+        var form = $(this).parent('.update-form');
+        form.submit();
+    })
+
+
+    $('.remove-product').click(function (e) {
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var url = `/cart/remove/${itemId}/`;
+        var data = {
+            'csrfmiddlewaretoken': csrfToken
+        };
+
+        $.post(url, data)
+            .done(function () {
+                location.reload();
+            });
+    })
+</script>
+
 {% endblock %}

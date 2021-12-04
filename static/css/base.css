@@ -38,16 +38,21 @@ body {
 }
 
 .product-img {
-    float: left;
     width:  14rem;
     height: auto;
     object-fit: cover;
 }
+
 .product-detail-img {
     float: left;
     width:  28rem;
     height: auto;
     object-fit: cover;
+}
+
+.product-cart-img {
+    width:  8rem;
+    height: auto;
 }
 
 .product-link {
