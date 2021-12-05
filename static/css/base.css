@@ -31,7 +31,6 @@ body {
 }
 
 .img-container {
-    float: left;
     width:  14rem;
     height: 14rem;
     overflow: hidden;
@@ -65,10 +64,6 @@ body {
 
 .product-row {
     display: table;
-}
-
-.product-link {
-    display: block;
 }
 
 .overlay {
