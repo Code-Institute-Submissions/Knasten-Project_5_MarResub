@@ -44,7 +44,6 @@ body {
 }
 
 .product-detail-img {
-    float: left;
     width:  28rem;
     height: auto;
     object-fit: cover;
@@ -53,6 +52,19 @@ body {
 .product-cart-img {
     width:  8rem;
     height: auto;
+}
+
+.product-mobile-img {
+    width: 77px;
+    height: auto;
+}
+
+.product-line {
+    display: table-cell;
+}
+
+.product-row {
+    display: table;
 }
 
 .product-link {

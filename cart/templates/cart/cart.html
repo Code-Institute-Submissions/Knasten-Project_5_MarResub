@@ -24,7 +24,7 @@
             <hr>
         </div>
 
-        <div class="row">
+        <div class="row d-none d-md-block">
             <div class="col">
                 {% if cart_items %}
                 <table class="table">
@@ -103,6 +103,54 @@
                 {% endif %}
             </div>
         </div>
+
+<!-- Mobile version -->
+        <div class="row d-sm-block d-md-none">
+            {% for item in cart_items %}
+                <span>{{ item.product.name }}</span>
+                <div class="product-row row">
+                    <div class="product-line d-flex">
+                        <img class="product-mobile-img" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                        <div><span>${{ item.product.price }}</span></div>
+                        <form class="form update-form" method="POST" action="{% url 'change_cart' item.product.id %}">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <button class="decrement-qty btn btn-sm rounded-0"
+                                            data-item_id="{{ item.product.id }}" id="decrement-qty_{{ item.product.id }}">
+                                            <span>
+                                                <i class="fas fa-minus fa-sm"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <input class="form-control form-control-sm qty_input" type="number"
+                                        name="quantity" value="{{ item.quantity }}" min="1" max="99"
+                                        data-item_id="{{ item.product.id }}" id="id_qty_{{ item.product.id }}">
+                                    <div class="input-group-append">
+                                        <button class="increment-qty btn btn-sm rounded-0"
+                                            data-item_id="{{ item.product.id }}" id="increment-qty_{{ item.product.id }}">
+                                            <span>
+                                                <i class="fas fa-plus fa-sm"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a class="update-product text-info ms-3 mt-3"><small>Update</small></a>
+                                <a class="text-danger remove-product me-3 mt-3" id="remove_{{ item.product.id }}">
+                                    <i class="mx-1 fa-fw far fa-trash-alt"></i>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr>
+            {% endfor %}
+        </div>
+
+
     </div>
 {% endblock %}
 
