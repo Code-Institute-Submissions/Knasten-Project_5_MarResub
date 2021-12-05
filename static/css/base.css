@@ -91,9 +91,15 @@ body {
 
 .message-container {
     position: fixed;
-    top: 120px;
+    top: 90px;
     right: 15px;
     z-index: 99999999;
+}
+
+.cart-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 /* -------------------------- MEDIA QUERIES --- */
