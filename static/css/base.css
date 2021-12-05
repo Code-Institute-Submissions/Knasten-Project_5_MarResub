@@ -54,7 +54,7 @@ body {
 }
 
 .product-mobile-img {
-    width: 77px;
+    width: 20%;
     height: auto;
 }
 
@@ -87,6 +87,13 @@ body {
 
 .header-container {
     padding-top: 100px;
+}
+
+.message-container {
+    position: fixed;
+    top: 120px;
+    right: 15px;
+    z-index: 99999999;
 }
 
 /* -------------------------- MEDIA QUERIES --- */

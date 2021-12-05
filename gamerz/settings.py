@@ -85,6 +85,7 @@ TEMPLATES = [
     },
 ]
 
+
 AUTHENTICATION_BACKENDS = [
     # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
@@ -103,8 +104,6 @@ ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 6
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
-
-
 
 
 WSGI_APPLICATION = 'gamerz.wsgi.application'
