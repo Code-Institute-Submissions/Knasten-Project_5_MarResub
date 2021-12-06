@@ -6,7 +6,14 @@ Other:
 # https://django-allauth.readthedocs.io/en/latest/faq.html?highlight=EMAIL_BACKEND#when-i-sign-up-i-run-into-connectivity-errors-connection-refused-et-al
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-Main bg pic = Photo by <a href="https://unsplash.com/@sadeqshahsvan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">sadeq shahsvan</a> on <a href="https://unsplash.com/s/photos/gaming?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
 
 Non-Solved-Problems: When using arrows you are able to go beyond the qty limit set.
+
+Credits:
+
+Main bg pic = Photo by <a href="https://unsplash.com/@sadeqshahsvan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">sadeq shahsvan</a> on <a href="https://unsplash.com/s/photos/gaming?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+Checkout html is mostly borrowed from Codeinstitute walkthrough project for E-Commerce, copied and then edited to suit my page better.
+While writing this project code snippets have been borrowed from the walkthrough project, this because when trying to figure out alternative ways it would result in longer code snippets than actually warranted.
   

@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load cart_calc %}
 
 {% block page_header %}
 
@@ -83,7 +84,7 @@
                                     </div>
                                 </td>
                                 <td class="py-5">${{ item.product.price }}</td>
-                                <td class="py-5">${{ item.product.price }}</td>
+                                <td class="py-5">${{ item.product.price | calc_subtotal:item.quantity }}</td>
                             </tr>
                         {% endfor %}
                     </tbody>
@@ -93,7 +94,7 @@
                   <hr class="w-25">
                   <h4>Grand Total: <strong>${{ grand_total|floatformat:2 }}</strong></h4>
                     <div class="row mt-5">
-                        <a href="" class="btn rounded-0 btn-lg">
+                        <a href="{% url 'checkout' %}" class="btn rounded-0 btn-lg">
                             <span class="text-uppercase">Secure Checkout</span>
                             <span class="icon">
                                 <i class="fas fa-lock"></i>
@@ -170,7 +171,7 @@
                 <hr class="w-25">
                 <h4>Grand Total: <strong>${{ grand_total|floatformat:2 }}</strong></h4>
                   <div class="row mt-5">
-                      <a href="" class="btn rounded-0 btn-lg">
+                      <a href="{% url 'checkout' %}" class="btn rounded-0 btn-lg">
                           <span class="text-uppercase">Secure Checkout</span>
                           <span class="icon">
                               <i class="fas fa-lock"></i>
