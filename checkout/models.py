@@ -28,20 +28,20 @@ class Order(models.Model):
         return uuid.uuid4().hex.upper()
 
     def update_total(self):
-        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum']
+        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum'] or 0
         if self.order_total > settings.FREE_DELIVERY_THRESHOLD:
             self.delivery_cost = 0
         else:
-            if request.user.is_authenticated:
-                self.delivery_cost = order_total * settings.MEMBER_DELIVERY_PERCENTAGE / 100
-            else:
-                self.delivery_cost = order_total * settings.STANDARD_DELIVERY_PERCENTAGE / 100
+            # if self.user.is_authenticated:
+            #     self.delivery_cost = order_total * settings.MEMBER_DELIVERY_PERCENTAGE / 100
+            # else:
+                self.delivery_cost = self.order_total * settings.STANDARD_DELIVERY_PERCENTAGE / 100
         self.grand_total = self.delivery_cost + self.order_total
         self.save()
 
-    def save(self):
+    def save(self, *args, **kwargs):
         if not self.order_number:
-            self.order_number = _generate_order_number()
+            self.order_number = self._generate_order_number()
         super().save(*args, **kwargs)
 
     def __str__(self):
@@ -54,9 +54,9 @@ class OrderLineItem(models.Model):
     lineitem_total = models.DecimalField(max_digits=8, decimal_places=2, null=False, blank= False, editable=False)
 
 
-    def save(self):
+    def save(self, *args, **kwargs):
         self.lineitem_total = self.product.price * self.quantity
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return f'SKU {self.product.sku} for order {self.order_number}'
+        return f'SKU {self.product.sku} for order {self.order.order_number}'
