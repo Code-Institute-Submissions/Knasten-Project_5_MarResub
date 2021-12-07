@@ -12,6 +12,19 @@
     margin-bottom: .5rem;
 }
 
+.StripeElement,
+.stripe-country-input {
+    box-sizing: border-box;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+    margin-bottom: .5rem;
+}
+
 .StripeElement--focus,
 .stripe-input:focus,
 .stripe-input:active {
@@ -35,6 +48,16 @@
 #card-element {
     color: #000;
     border: 1px solid #000;
+}
+
+select,
+select option {
+    color: black;
+}
+
+select:invalid,
+select option[value=""] {
+    color: lightgray;
 }
 
 #loading-overlay {
