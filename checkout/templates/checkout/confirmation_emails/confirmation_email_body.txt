@@ -1,0 +1,20 @@
+Hello {{ order.full_name }}!
+
+Here is your order confimation for your latest order from GamerZDen. Details for your order is below:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ date }}
+
+Order Total: ${{ order.order_total }}
+Delivery Cost: ${{ order.delivery_cost }}
+Grand Total: {{ order.grand_total }}
+
+Your order is being shipped to {{ order.street_address1 }} in {{ order.town_or_city }}, {{ order.county }}.
+
+Thank you for your purchase!
+
+Kindest Regards,
+
+GamerZDen
+
+If you need any support, please feel free to contact us at {{ contact_email }}

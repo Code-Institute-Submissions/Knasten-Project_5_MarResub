@@ -14,8 +14,20 @@ Credits:
 
 Main bg pic = Photo by <a href="https://unsplash.com/@sadeqshahsvan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">sadeq shahsvan</a> on <a href="https://unsplash.com/s/photos/gaming?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
+Fixture files was written by me and my brother git link odimac
+
 Checkout html is mostly borrowed from Codeinstitute walkthrough project for E-Commerce, copied and then edited to suit my page better.
 While writing this project code snippets have been borrowed from the walkthrough project, this because when trying to figure out alternative ways it would result in longer code snippets than actually warranted.
 
 Allauth templates has been copied from CodeInsitute walkthrough project.
+
+Testing: 
+I have tested form submission both from webhooks and directly with javascript. This was tested by commenting out javascript submission and then checking admin for orders.
+All images have been checked along with product information and everything shows up.
+Profile saving was tested by making a purchase and then checking admin for profile update
+Profile auto fill was tested by adding fields to profile and trying to make a purchase
+Webhooks have been checked on stripe to make sure they validate as expected.
+All views has been tested by entering the different parts of the site.
+All links has been tested by clicking.
+
   
