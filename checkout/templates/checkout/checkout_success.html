@@ -23,7 +23,6 @@
                 <p class="text-dark">Your order information can be seen below. A confirmation email will be sent to <strong>{{ order.email }}</strong></p>
             </div>
         </div>
-
         <div class="row">
             <div class="col-12 col-lg-6">
                 <div class="order-confirm-wrapper border">
@@ -41,7 +40,6 @@
                             <p class="small px-3">{{ order.order_number }}</p>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="ps-3"><strong>Order Date:</strong></p>
@@ -51,7 +49,6 @@
                         </div>
                     </div>
                     <hr>
-
                     <div class="row">
                         <div class="col">
                             <small class="text-muted ps-2">Order Details</small>
@@ -69,7 +66,6 @@
                     </div>
                     {% endfor %}
                     <hr>
-
                     <div class="row">
                         <div class="col">
                             <small class="text-muted ps-2">Delivery Info</small>
@@ -84,7 +80,6 @@
                             <p class="small px-3">{{ order.full_name }}</p>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="ps-3"><strong>Address:</strong></p>
@@ -93,7 +88,6 @@
                             <p class="small px-3">{{ order.street_address }}</p>
                         </div>
                     </div>
-
                     {% if order.street_address2 %}
                         <div class="row">
                             <div class="col-12 col-md-4">
@@ -122,7 +116,6 @@
                             <p class="small px-3">{{ order.town_or_city }}</p>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="ps-3"><strong>Postal Code:</strong></p>
@@ -131,7 +124,6 @@
                             <p class="small px-3">{{ order.postcode }}</p>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="ps-3"><strong>Country:</strong></p>
@@ -140,7 +132,6 @@
                             <p class="small px-3">{{ order.country }}</p>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="ps-3"><strong>Phone Number:</p></strong>
@@ -150,7 +141,6 @@
                         </div>
                     </div>
                     <hr>
-
                     <div class="row">
                         <div class="col">
                             <small class="text-muted ps-2">Billing Info</small>
@@ -165,7 +155,6 @@
                             <p class="small px-3">{{ order.order_total }}$</p>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="ps-3"><strong>Delivery Cost:</strong></p>
@@ -174,7 +163,6 @@
                             <p class="small px-3">{{ order.delivery_cost }}$</p>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="ps-3"><strong>Grand Total:</strong></p>
@@ -183,14 +171,19 @@
                             <p class="small px-3">{{ order.grand_total }}$</p>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-12 col-lg-6">
-
+                {% if from_profile %}
+                    <a href="{% url 'profile' %}">
+                        <span class="icon">
+                            <i class="fas fa-angle-left"></i>
+                        </span>
+                        <p class="small text-uppercase">Go back to profile</p>
+                    </a>
+                {% endif %}
             </div>
         </div>
     </div>

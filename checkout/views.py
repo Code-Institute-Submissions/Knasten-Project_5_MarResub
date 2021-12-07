@@ -6,6 +6,8 @@ from django.conf import settings
 from .forms import OrderForm
 from .models import Order, OrderLineItem
 from products.models import Product
+from profiles.forms import ProfileForm
+from profiles.models import UserProfile
 from cart.context_processors import cart_contents
 
 import stripe
@@ -109,6 +111,23 @@ def checkout(request):
 def checkout_success(request, order_number):
     save_info = request.session.get('save-info')
     order = get_object_or_404(Order, order_number=order_number)
+
+    profile = UserProfile.objects.get(user=request.user)
+    order.user_profile = profile
+    order.save()
+
+    if save_info:
+        profile_data = {
+            'default_phone_number': order.phone_number,
+            'default_street_address': order.street_address,
+            'default_street_address2': order.street_address2,
+            'default_town_or_city': order.town_or_city,
+            'default_county': order.county,
+            'default_postcode': order.postcode,
+            'default_country': order.country,
+        }
+        user_profile_form = ProfileForm(profile_data, instance=profile)
+
     messages.success(request, f'Order process successful\
         Your order number is {order_number}. We will send\
             a confirmation email to {order.email}')
