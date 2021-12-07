@@ -16,4 +16,6 @@ Main bg pic = Photo by <a href="https://unsplash.com/@sadeqshahsvan?utm_source=u
 
 Checkout html is mostly borrowed from Codeinstitute walkthrough project for E-Commerce, copied and then edited to suit my page better.
 While writing this project code snippets have been borrowed from the walkthrough project, this because when trying to figure out alternative ways it would result in longer code snippets than actually warranted.
+
+Allauth templates has been copied from CodeInsitute walkthrough project.
   
