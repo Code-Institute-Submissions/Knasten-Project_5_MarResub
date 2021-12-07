@@ -75,7 +75,7 @@ def add_product(request):
     form = ProductForm()
     template = 'products/add_product.html'
     context = {
-        'form': form
+        'form': form,
     }
 
     return render(request, template, context)
@@ -100,7 +100,7 @@ def edit_product(request, product_id):
     template = 'products/edit_product.html'
     context = {
         'form': form,
-        'product': product
+        'product': product,
     }
 
     return render(request, template, context)

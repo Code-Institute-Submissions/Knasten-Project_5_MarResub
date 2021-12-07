@@ -6,7 +6,7 @@ Other:
 # https://django-allauth.readthedocs.io/en/latest/faq.html?highlight=EMAIL_BACKEND#when-i-sign-up-i-run-into-connectivity-errors-connection-refused-et-al
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-
+Restricting of views for super user was done by reading this https://stackoverflow.com/questions/15998140/how-to-limit-a-view-to-superuser-only/47689629, and also https://docs.djangoproject.com/en/3.2/topics/auth/default/#django.contrib.auth.decorators.user_passes_test.
 
 Non-Solved-Problems: When using arrows you are able to go beyond the qty limit set.
 

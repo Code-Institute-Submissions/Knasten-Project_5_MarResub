@@ -132,7 +132,7 @@
                     <span class="mb-2">{{ item.product.name|truncatechars:35 }}</span>
                     <strong><span class="text-muted">SKU: {{ item.product.sku }}</span></strong>
                     <div class="product-row row">
-                        <div class="product-line d-flex justify-content-between">
+                        <div class="d-flex justify-content-between">
                             {% if item.product.image %}
                                 <img class="product-mobile-img my-3" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                             {% else %}
@@ -171,7 +171,7 @@
                                     </a>
                                 </div>
                             </form>
-                            <div class="subtotal-container my-3"><span>${{ item.product.price }}</span></div>
+                            <div class="subtotal-container my-3"><span>${{ item.product.price | calc_subtotal:item.quantity }}</span></div>
                         </div>
                     </div>
                     <hr>
