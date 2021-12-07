@@ -106,6 +106,10 @@ body {
     max-width: 368px;
 }
 
+.input-group {
+    min-width: 150px;
+}
+
 /* -------------------------- MEDIA QUERIES --- */
 @media only screen and (max-width: 369px)  {
 

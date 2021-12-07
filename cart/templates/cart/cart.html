@@ -41,7 +41,13 @@
                     <tbody>
                         {% for item in cart_items %}
                             <tr>
-                                <th class="py-5" scope="row"><img class="product-cart-img" src="{{ item.product.image.url }}" alt="{{ item.product.name }}"></th>
+                                <th class="py-5" scope="row">
+                                {% if item.product.image %}
+                                    <img class="product-cart-img" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                                {% else %}
+                                    <img class="product-cart-img" src="{{ MEDIA_URL }}placeholder.png" alt="{{ item.product.name }}">
+                                {% endif %}
+                                </th>
                                 <td class="py-5"><strong><p>{{ item.product.sku }}</p></strong></td>
                                 <td class="py-5">{{ item.product.name }}</td>
                                 <td class="py-5">
@@ -127,7 +133,11 @@
                     <strong><span class="text-muted">SKU: {{ item.product.sku }}</span></strong>
                     <div class="product-row row">
                         <div class="product-line d-flex justify-content-between">
-                            <img class="product-mobile-img my-3" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                            {% if item.product.image %}
+                                <img class="product-mobile-img my-3" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                            {% else %}
+                                <img class="product-mobile-img my-3" src="{{ MEDIA_URL }}placeholder.png" alt="{{ item.product.name }}">
+                            {% endif %}
                             <div class="price-container my-3"><span>${{ item.product.price }}</span></div>
                             <form class="form update-form my-3" method="POST" action="{% url 'change_cart' item.product.id %}">
                                 {% csrf_token %}
