@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import user_passes_test
 from django.db.models import Q
 from .models import Product, Category
 from .forms import ProductForm
@@ -60,6 +61,7 @@ def product_detail(request, id):
     return render(request, 'products/product_detail.html', context)
 
 
+@user_passes_test(lambda u: u.is_superuser, login_url='home')
 def add_product(request):
     """View for superusers to add products"""
     if request.method == 'POST':
@@ -79,6 +81,7 @@ def add_product(request):
     return render(request, template, context)
 
 
+@user_passes_test(lambda u: u.is_superuser, login_url='home')
 def edit_product(request, product_id):
     """View to edit product"""
     product = get_object_or_404(Product, pk=product_id)
@@ -102,6 +105,8 @@ def edit_product(request, product_id):
 
     return render(request, template, context)
 
+
+@user_passes_test(lambda u: u.is_superuser, login_url='home')
 def delete_product(request, product_id):
     """View to delete product"""
     product = get_object_or_404(Product, pk=product_id)
