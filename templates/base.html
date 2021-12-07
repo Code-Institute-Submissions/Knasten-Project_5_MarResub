@@ -68,7 +68,7 @@
                                     </ul>
                                 </div>
                                 {% if request.user.is_authenticated %}
-                                    <a class="nav-link mx-3" href="#">Profile</a>
+                                    <a class="nav-link mx-3" href="{% url 'profile' %}">Profile</a>
                                     <a class="nav-link mx-3" href="#">Orders</a>
                                     <a class="nav-link mx-3" href="{% url 'account_logout' %}">Logout</a>
                                 {% else %}
