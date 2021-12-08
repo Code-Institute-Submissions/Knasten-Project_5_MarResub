@@ -1,10 +1,10 @@
-/* Colors to be used through out the site */
+/*------------------------------------------ Root for general colors/fonts -------------------  */
 :root {
-    --primary-border-color: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
     --primary-header-color: linear-gradient(90deg, #cc2b5e, #753a88);
-    --fallback-border-color: #1a2a6c;
-    --blur: 10px;
 }
+
+
+/*--------------------------------------- General styling -------------*/
 
 html {
     height: 100%;
@@ -14,14 +14,7 @@ body {
     background: url('/media/main-bg.jpg') no-repeat center center fixed;
     background-size: cover;
 }
-/*-------------------  Header ---------*/
-.bg-header {
-    background: var(--primary-header-color);
-}
-
-.bg-shroud {
-    background-color: rgb(255, 255, 255, 0.7);
-}
+/*------------------- Header & Top Margin ---------*/
 
 .margin-container {
     margin-top: 120px;
@@ -36,13 +29,30 @@ body {
     padding: 0;
 }
 
-/*------------------- Image styling -------*/
-
-.img-container {
-    width:  14rem;
-    height: 14rem;
-    overflow: hidden;
+.header-container {
+    padding-top: 100px;
+    width: 100%;
 }
+
+/*-------------------------- Backgrounds & Overlays -------------*/
+.bg-shroud {
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+.bg-header {
+    background: var(--primary-header-color);
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: #fff;
+	z-index: -1;
+}
+/*--------------------------------------- Image styling -------------*/
 
 .product-img {
     width:  14rem;
@@ -72,25 +82,15 @@ body {
     height: auto;
 }
 
+
 .product-row {
     display: table;
 }
 
-.overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: #fff;
-	z-index: -1;
-}
 
-.header-container {
-    padding-top: 100px;
-    width: 100%;
-}
 
+
+/*--------------------- Django Message Container ----------- */
 .message-container {
     position: fixed;
     top: 90px;
@@ -98,17 +98,12 @@ body {
     z-index: 99999999;
 }
 
+/* Class for scrolling cart */
 .cart-wrapper {
     height: 100px;
     overflow-x: hidden;
     overflow-y: auto;
 }
-
-.input-group {
-    min-width: 150px;
-}
-
-
 
 /* Allauth form formatting */
 
@@ -229,7 +224,7 @@ body {
 .bg-black {
     background-color: #FFF !important; 
 }
-
+/*------------------- Input/Selector Styling ---------- */
 input[type=search] {
     padding: 8px;
     border: #000 solid 2px;
@@ -238,10 +233,14 @@ input[type=search] {
     margin-bottom: auto;
   }
 
-  input[type=submit] {
+input[type=submit] {
     margin-top: auto;
     margin-bottom: auto;
-  }
+}
+
+.input-group {
+    min-width: 150px;
+}
 
 #sort_selector {
     padding: 8px;
@@ -272,6 +271,8 @@ select::-ms-expand {
     
   }
 
+/*-------------- Custom Button -------------*/
+
 .button-trans {
     display: inline-block;
     outline: none;
@@ -291,9 +292,8 @@ select::-ms-expand {
 /* -------------------------- MEDIA QUERIES --- */
 
 @media only screen and (max-width: 576px)  {
-
     #navbar-button {
-        margin-bottom: 8px; !important
+        margin-bottom: 8px !important; 
     }
     
     #search-form {
@@ -312,20 +312,17 @@ select::-ms-expand {
 
 }
 
-
 @media (min-width: 768px) {
     #search-form {
         max-width: 200px;
     }
 }
 
-
 @media (min-width: 992px) {
     #search-form {
         max-width: 300px;
     }
 }
-
 
 @media (min-width: 1200px) {
     #search-form {
