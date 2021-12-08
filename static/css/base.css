@@ -283,12 +283,17 @@ select::-ms-expand {
     #search-form {
         min-width: 200px;
     }
+
+    .product-detail-img {
+        max-width: 175px;
+    }
 }
 
 @media (min-width: 576px) {
     #search-form {
         min-width: 200px;
     }
+
 }
 
 
