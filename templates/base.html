@@ -36,17 +36,17 @@
         <title> {% block extra_title %}{% endblock %}</title>
     </head>
     <body>
-       <header class="container-fluid fixed-top px-0 bg-header">
-            <div class="navbar navbar-expand-lg navbar-light m-1">
-                <div class="row w-100">
-                    <div class="col-sm-3 col-lg-6">
+       <header class="container-fluid fixed-top bg-header">
+            <div class="navbar navbar-expand-lg navbar-light no-padding-margin">
+                <div class="row w-100 py-2">
+                    <div class="col me-auto">
                         <button class="navbar-toggler" id="navbar-button" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse ms-3" id="navbarNavAltMarkup">
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
                                 <a class="navbar-brand" href="{% url 'home' %}">
-                                    <img src="{{ MEDIA_URL }}computer.svg" class="me-1" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                                    <img src="{{ MEDIA_URL }}computer.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
                                     GamerZDen
                                 </a>
                                 <div class="dropdown">
@@ -87,26 +87,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-lg-3">
-                        <form method="GET" action="{% url 'products' %}">
-                            <div class="d-flex justify-content-center">
-                                <div class="col-10">
-                                    <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="search_bar" id="search_bar">
-                                </div>
-                                <div class="col-2">
-                                    <button type="submit"><span class="icon"><i class="fa fa-search search-icon"></i></span></button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-1 offset-lg-2 mt-2 d-none d-lg-block">
-                        <a class="text-dark text-decoration-none" href="{% url 'view_cart' %}">
-                            {% if grand_total %}
-                                <h6>${{ grand_total }} <i class="fas fa-shopping-cart fa-lg"></i></h6>
-                            {% else %}
-                                <span>$0.00 <i class="fas fa-shopping-cart fa-lg"></i></span>
-                            {% endif %}
-                        </a>
+                    <div class="col my-auto">
+                        <div class="d-flex justify-content-end">
+                            <a class="text-dark text-decoration-none" href="{% url 'view_cart' %}">
+                                {% if grand_total %}
+                                    <h6 class="d-inline-block"><i class="fas fa-shopping-cart fa-lg"></i> ${{ grand_total | floatformat:2 }}</h6>
+                                {% else %}
+                                    <span><i class="fas fa-shopping-cart fa-lg"></i> $0.00</span>
+                                {% endif %}
+                            </a>
+                     </div>
                     </div>
                 </div>
             </div>

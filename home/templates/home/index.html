@@ -2,13 +2,28 @@
 {% load static %}
 
 {% block page_header %}
-
+    <div class="header-container mb-3">
+        <div class="row mx-0">
+            <div class="col-12">
+                <form method="GET" action="{% url 'products' %}" class="mb-3 mx-auto" id="search-form">
+                    <div class="d-flex">
+                        <div class="col-9">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="search_bar" id="search_bar">
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-white btn-trans ms-3" type="submit">Submit</button>
+                        </div>  
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 {% endblock %}
 
 {% block content %}
     <div class="container margin-container h-100">
         <div class="row">
-            <div class="col-lg-4 py-2 bg-shroud">
+            <div class="col-6 col-lg-4 py-2 bg-shroud">
                 <h3 class="text-uppercase text-center">Get your new gaming gear from us!</h3>
                 <hr>
                 <a href="{% url 'products' %}">
@@ -17,7 +32,7 @@
             </div>
         </div>
         <div class="row justify-content-end" id="home-link-right">
-            <div class="col-lg-4 lg-offset-6 py-2 bg-shroud">
+            <div class="col-6 col-lg-4 py-2 bg-shroud">
                 <h3 class="text-uppercase text-center">
                     Easier shopping! Just click below!
                 </h3>

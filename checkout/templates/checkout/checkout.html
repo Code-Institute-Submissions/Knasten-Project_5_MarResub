@@ -7,9 +7,20 @@
 {% endblock %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
+    <div class="header-container mb-3 bg-black">
+        <div class="row mx-0">
+            <div class="col-12">
+                <form method="GET" action="{% url 'products' %}" class="mb-3 mx-auto w-25" id="search-form">
+                    <div class="d-flex">
+                        <div class="col-9">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="search_bar" id="search_bar">
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-bw btn-trans ms-3" type="submit">Submit</button>
+                        </div>  
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 {% endblock %}
@@ -51,21 +62,21 @@
                             <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                         </div>
                         <div class="col-3 text-right">
-                            <p class="my-0 small text-muted">${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                            <p class="mt-1 small text-muted">${{ item.product.price | calc_subtotal:item.quantity }}</p>
                         </div>
                     </div>
                 {% endfor %}
                 <hr class="my-0">
-                <div class="row text-black text-right">
+                <div class="row text-dark text-right">
                     <div class="col-7 offset-2">
-                        <p class="my-0">Order Total:</p>
-                        <p class="my-0">Delivery:</p>
-                        <p class="my-0">Grand Total:</p>
+                        <p class="my-1">Order Total:</p>
+                        <p class="my-1">Delivery:</p>
+                        <p class="my-1">Grand Total:</p>
                     </div>
                     <div class="col-3">
-                        <p class="my-0">${{ total | floatformat:2 }}</p>
-                        <p class="my-0">${{ delivery | floatformat:2 }}</p>
-                        <p class="my-0"><strong>${{ grand_total | floatformat:2 }}</strong></p>
+                        <p class="my-1">${{ total | floatformat:2 }}</p>
+                        <p class="my-1">${{ delivery | floatformat:2 }}</p>
+                        <p class="my-1"><strong>${{ grand_total | floatformat:2 }}</strong></p>
                     </div>
                 </div>
             </div>
@@ -79,7 +90,7 @@
                         {{ order_form.email | as_crispy_field }}
                     </fieldset>
                     <fieldset class="rounded px-3 mb-5">
-                        <legend class="fieldset-label small text-black px-2 w-auto">Delivery</legend>
+                        <legend class="fieldset-label small text-dark px-2 w-auto">Delivery</legend>
                         {{ order_form.phone_number | as_crispy_field }}
                         {{ order_form.street_address | as_crispy_field }}
                         {{ order_form.street_address2 | as_crispy_field }}
@@ -100,7 +111,7 @@
 						</div>
                     </fieldset>
                     <fieldset class="px-3">
-                        <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
+                        <legend class="fieldset-label small text-dark px-2 w-auto">Payment</legend>
                         <!-- A Stripe card element will go here -->
                         <div class="mb-3" id="card-element"></div>
                         <!-- Used to display form errors -->

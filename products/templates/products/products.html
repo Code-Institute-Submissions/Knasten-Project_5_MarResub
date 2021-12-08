@@ -3,9 +3,20 @@
 
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
+    <div class="header-container mb-3 bg-black">
+        <div class="row mx-0">
+            <div class="col-12">
+                <form method="GET" action="{% url 'products' %}" class="mb-3 mx-auto w-25" id="search-form">
+                    <div class="d-flex">
+                        <div class="col-9">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="search_bar" id="search_bar">
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-bw btn-trans ms-3" type="submit">Submit</button>
+                        </div>  
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 {% endblock %}

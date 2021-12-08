@@ -1,3 +1,4 @@
+/* Colors to be used through out the site */
 :root {
     --primary-border-color: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
     --primary-header-color: linear-gradient(90deg, #cc2b5e, #753a88);
@@ -13,7 +14,7 @@ body {
     background: url('/media/main-bg.jpg') no-repeat center center fixed;
     background-size: cover;
 }
-
+/*-------------------  Header ---------*/
 .bg-header {
     background: var(--primary-header-color);
 }
@@ -23,12 +24,19 @@ body {
 }
 
 .margin-container {
-    margin-top: 148px;
+    margin-top: 80px;
 }
 
 #home-link-right {
-    margin-top: 250px;
+    margin-top: 125px;
 }
+
+.zero-padding-margin {
+    margin: 0;
+    padding: 0;
+}
+
+/*------------------- Image styling -------*/
 
 .img-container {
     width:  14rem;
@@ -58,8 +66,10 @@ body {
     height: 7vh;
 }
 
-.product-line {
-    display: table-cell;
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .product-row {
@@ -75,18 +85,10 @@ body {
 	background: #fff;
 	z-index: -1;
 }
-.bg-gray {
-    background-color: #d1cfcf;
-}
-
-.img-responsive{
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
 
 .header-container {
     padding-top: 100px;
+    width: 100%;
 }
 
 .message-container {
@@ -106,14 +108,7 @@ body {
     min-width: 150px;
 }
 
-/* -------------------------- MEDIA QUERIES --- */
-@media only screen and (max-width: 369px)  {
 
-#navbar-button {
-    margin-bottom: 8px; !important
-}
-
-}
 
 /* Allauth form formatting */
 
@@ -179,16 +174,35 @@ body {
 .btn-black {
     color: #FFF;
     background: #000;
-    border: grey 3px solid;
+    border: white 3px solid;
 
     /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 /* Product Form */
+
 .btn-file {
     position: relative;
     overflow: hidden;
+}
+
+.btn-trans {
+    border-radius: 4px;
+    transition: all .15s ease-in;
+    outline: none;
+    font-family: 'open sans', sans-serif;
+    font-weight: 500;
+}
+
+.btn-white {
+    color: #000;
+    background-color: #fff;
+}
+
+.btn-bw {
+    color: #fff;
+    background-color: #000;
 }
 
 .btn-file input[type='file'] {
@@ -210,4 +224,48 @@ body {
     background-color: #dc3545;
     border-color: #dc3545;
     border-radius: 0;
+}
+
+.bg-black {
+    background-color: #FFF !important; 
+}
+
+/* -------------------------- MEDIA QUERIES --- */
+
+@media only screen and (max-width: 576px)  {
+
+    #navbar-button {
+        margin-bottom: 8px; !important
+    }
+    
+    #search-form {
+        min-width: 150px;
+    }
+}
+
+@media (min-width: 576px) {
+    #search-form {
+        max-width: 150px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    #search-form {
+        max-width: 200px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    #search-form {
+        max-width: 300px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    #search-form {
+        max-width: 300px;
+    }
 }
