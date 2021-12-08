@@ -7,7 +7,6 @@
   - [User Stories](#user-stories)
     - [User Stories for Customers](#user-stories-for-customers)
     - [User Stories for Shop Administrators](#user-stories-for-shop-administrators)
-  - [Wireframes](#wireframes)
   - [Data Structure](#data-structure)
   - [Design](#design)
     - [Typography](#typography)
@@ -77,19 +76,13 @@ using django framework. Implementing stripe for payments and AWS for file storin
 | Add/Update/Remove a product                 | keep the store up to date                        |
 
 
-### Wireframes
-
-
-![GamerZDen Wireframe](wireframe)
-
--   The full desktop wireframes can be found [here](wirframe desktop)
--   The mobile wireframes can be found [here](wireframe mobile)
-
 ### Data Structure
 
 Before starting the development of the application, models and their relationships were planned:
 
-![GamerZDen datamodels]()
+  superuser   < ProfileModel <> checkoutform > order model
+      > product model              ^> Personal Page   <
+
 
 ### Design
 
@@ -100,21 +93,16 @@ Colors has been selected carefully to match and make it easy to read.
 
 Two fonts from [Google Fonts](https://fonts.google.com/) were used throughout the site:
 
-1. **Roboto Slab** was used for the logo and the navigation of the site.
+1. **Roboto Slab** was used for all the headings
 
-![Roboto Slab Font](roboto example)
+1. **Lato** was used for all the content with different weights.
 
-1. **Lato** was used for all the titles and contents of the site.
-
-![Lato Font](lato example)
 
 #### Colors
 
 A simple color scheme was used to accentuate readability and usability.
 
--   ![]() `#1b1b1b - dark grey, primary color` 
-
-This color is used in the header's background and for fonts throughout the site. It was chosen for its simplicity and for providing contrast with other colors.
+-   I choose to go with white background except the landing page which I felt need a bit more spice. And to break all the white and black of, I added a colorful header.
 
 
 ## Features
