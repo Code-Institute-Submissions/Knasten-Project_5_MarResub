@@ -9,7 +9,7 @@
                 <form method="GET" action="{% url 'products' %}" class="mb-3 mx-auto w-25" id="search-form">
                     <div class="d-flex">
                         <div class="col-9">
-                            <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="search_bar" id="search_bar">
+                            <input class="form-control" type="search" placeholder="Search Products" aria-label="Search" name="search_bar" id="search_bar">
                         </div>
                         <div class="col-3">
                             <button class="btn btn-bw btn-trans ms-3" type="submit">Submit</button>
@@ -17,36 +17,32 @@
                     </div>
                 </form>
             </div>
+            <hr style="width: 50%;" class="mx-auto">
+            <div class="col-12 mt-4">
+                <div class="d-flex justify-content-center mb-3">
+                    <div class="sort-select-wrapper">
+                        <select id="sort-selector" class="custom-select mx-auto">
+                            <option value="reset" {% if selected_sorting == 'None_None' %}selected{% endif %}>No Sorting..</option>
+                            <option value="price_asc" {% if selected_sorting == 'price_asc' %}selected{% endif %}>Price Ascending</option>
+                            <option value="price_desc" {% if selected_sorting == 'price_desc' %}selected{% endif %}>Price Descending</option>
+                            <option value="rating_asc" {% if selected_sorting == 'rating_asc' %}selected{% endif %}>Rating Ascending</option>
+                            <option value="rating_desc" {% if selected_sorting == 'rating_desc' %}selected{% endif %}>Rating Descending</option>
+                            <option value="category_asc" {% if selected_sorting == 'category_asc' %}selected{% endif %}>Category (A-Z)</option>
+                            <option value="category_desc" {% if selected_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}
 {% block content %}
     <div class="overlay"></div>
     <div class="container">
-        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-5">
-            <div class="sort-select-wrapper">
-                <select id="sort-selector" class="custom-select">
-                    <option value="reset" {% if selected_sorting == 'None_None' %}selected{% endif %}>No Sorting..</option>
-                    <option value="price_asc" {% if selected_sorting == 'price_asc' %}selected{% endif %}>Price Ascending</option>
-                    <option value="price_desc" {% if selected_sorting == 'price_desc' %}selected{% endif %}>Price Descending</option>
-                    <option value="rating_asc" {% if selected_sorting == 'rating_asc' %}selected{% endif %}>Rating Ascending</option>
-                    <option value="rating_desc" {% if selected_sorting == 'rating_desc' %}selected{% endif %}>Rating Descending</option>
-                    <option value="category_asc" {% if selected_sorting == 'category_asc' %}selected{% endif %}>Category (A-Z)</option>
-                    <option value="category_desc" {% if selected_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
-                </select>
-            </div>
-        </div>
         <div class="row">
             {% for product in products %}
                 <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-5 ">
                     <div class="card rounded h-100">
-                        {% if request.user.is_superuser %}
-                        <div class="d-flex justify-content-center">
-                            <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-                            <span class="mx-3"> | </span>
-                            <a class="text-info" href="{% url 'edit_product' product.id %}">Edit</a>
-                        </div>
-                        {% endif %}
                         {% if product.image %}
                         <div class="d-flex justify-content-center mt-3">
                             <a href="{% url 'product_detail' product.id %}" class="product-link">
@@ -91,6 +87,13 @@
                         </div>
                         <div class="card-footer bg-white d-flex justify-content-between">
                             <strong><p>${{ product.price }}</p></strong>
+                            {% if request.user.is_superuser %}
+                                <div class="d-flex justify-content-center">
+                                    <small><a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a></small>
+                                    <span class="mx-3"> | </span>
+                                    <small><a class="text-info" href="{% url 'edit_product' product.id %}">Edit</a></small>
+                                </div>
+                            {% endif %}
                             <span class="me-2">{{ product.rating }} <i class="fas fa-star"></i></span>
                         </div>
                     </div>
