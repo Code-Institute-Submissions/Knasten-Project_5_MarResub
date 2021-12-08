@@ -102,10 +102,6 @@ body {
     overflow-y: auto;
 }
 
-#search_bar {
-    max-width: 368px;
-}
-
 .input-group {
     min-width: 150px;
 }

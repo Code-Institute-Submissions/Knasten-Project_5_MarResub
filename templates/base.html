@@ -39,7 +39,7 @@
        <header class="container-fluid fixed-top px-0 bg-header">
             <div class="navbar navbar-expand-lg navbar-light m-1">
                 <div class="row w-100">
-                    <div class="col-sm col-lg-6">
+                    <div class="col-sm-3 col-lg-6">
                         <button class="navbar-toggler" id="navbar-button" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -67,28 +67,45 @@
                                         <a class="dropdown-item" href="{% url 'products' %}?category=cases">Cases</a>
                                     </ul>
                                 </div>
-                                {% if request.user.is_authenticated %}
-                                    {% if request.user.is_superuser %}
-                                        <a class="nav-link mx-3" href="{% url 'add_product' %}">Product Management</a>
+                                <div class="dropdown">
+                                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+                                        Members
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        {% if request.user.is_authenticated %}
+                                        {% if request.user.is_superuser %}
+                                            <a class="dropdown-item" href="{% url 'add_product' %}">Product Management</a>
+                                        {% endif %}
+                                        <a class="dropdown-item" href="{% url 'profile' %}">Profile</a>
+                                        <a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a>
+                                    {% else %}
+                                        <a class="dropdown-item" href="{% url 'account_login' %}">Login</a>
+                                        <a class="dropdown-item" href="{% url 'account_signup' %}">Sign Up!</a>
                                     {% endif %}
-                                    <a class="nav-link mx-3" href="{% url 'profile' %}">Profile</a>
-                                    <a class="nav-link mx-3" href="{% url 'account_logout' %}">Logout</a>
-                                {% else %}
-                                    <a class="nav-link mx-3" href="{% url 'account_login' %}">Login</a>
-                                    <a class="nav-link mx-3" href="{% url 'account_signup' %}">Sign Up!</a>
-                                {% endif %}
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-10 col-lg-3">
-                        <form class="d-flex" method="GET" action="{% url 'products' %}">
-                            <input class="form-control me-lg-2" type="search" placeholder="Search" aria-label="Search" name="search_bar" id="search_bar">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
+                    <div class="col-sm-3 col-lg-3">
+                        <form method="GET" action="{% url 'products' %}">
+                            <div class="d-flex justify-content-center">
+                                <div class="col-10">
+                                    <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="search_bar" id="search_bar">
+                                </div>
+                                <div class="col-2">
+                                    <button type="submit"><span class="icon"><i class="fa fa-search search-icon"></i></span></button>
+                                </div>
+                            </div>
                         </form>
                     </div>
                     <div class="col-1 offset-lg-2 mt-2 d-none d-lg-block">
                         <a class="text-dark text-decoration-none" href="{% url 'view_cart' %}">
-                            <span>Cart: <i class="fas fa-shopping-cart fa-lg"></i></span>
+                            {% if grand_total %}
+                                <h6>${{ grand_total }} <i class="fas fa-shopping-cart fa-lg"></i></h6>
+                            {% else %}
+                                <span>$0.00 <i class="fas fa-shopping-cart fa-lg"></i></span>
+                            {% endif %}
                         </a>
                     </div>
                 </div>
