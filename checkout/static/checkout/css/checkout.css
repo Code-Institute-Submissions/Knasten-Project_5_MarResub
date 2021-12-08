@@ -1,3 +1,6 @@
+/*------------------- Stripe Styling --------------------- */
+/* Credit to CodeInstitute for this code */
+
 .StripeElement,
 .stripe-input {
     box-sizing: border-box;
@@ -60,6 +63,7 @@ select option[value=""] {
     color: #aab7c4 !important;
 }
 
+/*------------------- Payment loader --------------*/
 #loading-overlay {
     display: none;
     position: fixed;
