@@ -58,7 +58,7 @@
                         {% endif %}
                         <div class="card-body mt-3">
                             <div class="row">
-                                <h5>{{ product.name }}</h3>
+                                <h5>{{ product.name }}</h5>
                                 {% if product.category %}
                                     <p class="mt-2 mb-0">
                                     <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
@@ -86,7 +86,7 @@
                             <small class="text-muted">Model: {{ product.model_id }}</small>
                         </div>
                         <div class="card-footer bg-white d-flex justify-content-between">
-                            <strong><p>${{ product.price }}</p></strong>
+                            <strong>${{ product.price }}</strong>
                             {% if request.user.is_superuser %}
                                 <div class="d-flex justify-content-center">
                                     <small><a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a></small>
@@ -105,7 +105,7 @@
 
 {% block postloadjs %}
     {{ block.super }}
-    <script type="text/javascript">
+    <script>
         $('#sort-selector').change(function() {
             var selector = $(this);
             var currentUrl = new URL(window.location);

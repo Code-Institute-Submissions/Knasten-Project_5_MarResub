@@ -26,9 +26,9 @@
             <div class="col-6 col-lg-4 py-2 bg-shroud">
                 <h3 class="text-uppercase text-center">Get your new gaming gear from us!</h3>
                 <hr>
-                <a href="{% url 'products' %}" class="d-flex justify-content-center text-decoration-none">
-                    <button class="btn btn-bw button-trans btn-lg my-2" type="submit">Browse our inventory!</button>
-                </a>
+                <div class="d-flex justify-content-center">
+                    <a href="{% url 'products' %}" class="btn btn-bw button-trans btn-lg">Browse our inventory!</a>
+                </div>
             </div>
         </div>
         <div class="row justify-content-end" id="home-link-right">
@@ -38,17 +38,17 @@
                     Check your old orders here!
                 </h3>
                 <hr>
-                <a href="{% url 'profile' %}" class="d-flex justify-content-center text-decoration-none">
-                    <button class="btn btn-bw button-trans btn-lg my-2">Profile!</button>
-                </a>
+                <div class="d-flex justify-content-center">
+                    <a href="{% url 'profile' %}" class="btn btn-bw button-trans btn-lg">Profile!</a>
+                </div>
                 {% else %}
                 <h3 class="text-uppercase text-center">
                     Easier shopping! Just click below!
                 </h3>
                 <hr>
-                <a href="{% url 'account_signup' %}" class="d-flex justify-content-center text-decoration-none">
-                    <button class="btn btn-bw button-trans btn-lg my-2" type="submit">Sign up!</button>
-                </a>
+                <div class="d-flex justify-content-center">
+                    <a href="{% url 'account_signup' %}" class="btn btn-bw button-trans btn-lg my-2">Sign up!</a>
+                
                 {% endif %}
             </div>
         </div>

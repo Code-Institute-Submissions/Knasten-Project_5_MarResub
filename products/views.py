@@ -8,12 +8,11 @@ from .forms import ProductForm
 # Create your views here.
 
 def all_products(request):
-
+    """View returns all products and sorts/filters"""
     products = Product.objects.all()
     categories = Category.objects.all()
     query = None  # Needed to make sure it dosent bug, when not entering a search value.
     sort = None
-    sortTwo = None
     direction = None
 
     if request.GET:
@@ -31,14 +30,19 @@ def all_products(request):
             categories = Category.objects.filter(name__in=categories)
 
         if 'sort' in request.GET:
-            sort = request.GET['sort']
-            sortTwo = sort
-
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'name':
+                sortkey = 'lower_name'
+                products = products.annotate(lower_name=Lower('name'))
+            if sortkey == 'category':
+                sortkey = 'category__name'
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
-                    sortTwo = f'-{sort}'
-            products = products.order_by(sortTwo)
+                    sortkey = f'-{sortkey}'
+            products = products.order_by(sortkey)
+
 
     selected_sorting = f'{sort}_{direction}'
 

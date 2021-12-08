@@ -1,12 +1,3 @@
-Problems occured: (1(Media not showing up )), (2(Some products imgs not working in cart)), (3(Problem with toast and/or collasible menus))
-Solutions: ((1)change this line "[BASE_DIR / 'media']" for "os.path.join(BASE_DIR, 'media')"), (2(Spelling mistake on a url link instead of "." I had "_")),
-(3(Had to import other versions of scripts and remove "bs" from collasible menus, example "data-bs-toggle" is now "data-toggle" This is beacuse I now import bootstrap 4 instead of 5 and they have changed the code for this.))
-
-
-
-Non-Solved-Problems: When using arrows you are able to go beyond the qty limit set.
-
-
 ![GamerZDen](picture in here)
 
 # GamerZDen
@@ -98,7 +89,7 @@ using django framework. Implementing stripe for payments and AWS for file storin
 
 Before starting the development of the application, models and their relationships were planned:
 
-![GamerZDen datamodels](readme-files/beer-warehaus-models.png)
+![GamerZDen datamodels]()
 
 ### Design
 
@@ -328,3 +319,16 @@ To deploy Beer WareHaus to Heroku, use the following steps:
 -   Restricting of views for super user was done by reading this (https://stackoverflow.com/questions/15998140/how-to-limit-a-view-to-superuser-only/47689629), (https://docs.djangoproject.com/en/3.2/topics/auth/default/#django.contrib.auth.decorators.user_passes_test)
 
   
+
+
+## Problems
+
+### Solved
+-   Media was not showing up when I first started out the project. After reading and checking the code I found it was this line "[BASE_DIR / 'media']".
+    I had to change it to os.path.join(BASE_DIR, 'media) and it started working. Though the static files were still able to use 'BASE_DIR /' syntax
+-   Products images not showing up in cart: This was beacuse of spelling mistake on the url link, accidently wrote "." instead of "_"
+-   Lot of problems with my collasible menus OR when they were working my toast didn't work. After alot of thinking I found my toast would work with an older version of bootstrap and I 
+    could my collasible working by removing 'bs' from all 'data' arguments in the form.
+
+### Not solved
+-   When using the keyboard arrows you are able to go beyond the qty limit set, when adding products to the cart.
