@@ -89,7 +89,7 @@
                     </div>
                     <div class="col my-auto">
                         <div class="d-flex justify-content-end">
-                            <a class="text-dark text-decoration-none" href="{% url 'view_cart' %}">
+                            <a class="text-decoration-none btn-lg btn-bw button-trans" href="{% url 'view_cart' %}">
                                 {% if grand_total %}
                                     <h6 class="d-inline-block"><i class="fas fa-shopping-cart fa-lg"></i> ${{ grand_total | floatformat:2 }}</h6>
                                 {% else %}

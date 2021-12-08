@@ -24,7 +24,7 @@ body {
 }
 
 .margin-container {
-    margin-top: 80px;
+    margin-top: 120px;
 }
 
 #home-link-right {
@@ -271,6 +271,22 @@ select::-ms-expand {
      var(--select-border);
     
   }
+
+.button-trans {
+    display: inline-block;
+    outline: none;
+    background-color: transparent;
+    padding: 0 20px;
+    line-height: 200%;
+    border: 1px solid silver;
+    background-image: linear-gradient(#000, #000 50%, #FFF 50%, #FFF);
+    background-size: 100% 200%;
+    -webkit-transition: background-position .3s;
+    transition: background-position .3s;
+}
+.button-trans:hover {
+    background-position: 0 -100%;
+}
   
 /* -------------------------- MEDIA QUERIES --- */
 

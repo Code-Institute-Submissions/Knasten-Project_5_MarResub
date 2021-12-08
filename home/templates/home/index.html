@@ -11,7 +11,7 @@
                             <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="search_bar" id="search_bar">
                         </div>
                         <div class="col-3">
-                            <button class="btn btn-white btn-trans ms-3" type="submit">Submit</button>
+                            <button class="btn btn-bw button-trans ms-3" type="submit">Submit</button>
                         </div>  
                     </div>
                 </form>
@@ -26,20 +26,30 @@
             <div class="col-6 col-lg-4 py-2 bg-shroud">
                 <h3 class="text-uppercase text-center">Get your new gaming gear from us!</h3>
                 <hr>
-                <a href="{% url 'products' %}">
-                    <button class="btn btn-lg btn-outline-success bg-dark my-2" type="submit">Browse our inventory!</button>
+                <a href="{% url 'products' %}" class="d-flex justify-content-center text-decoration-none">
+                    <button class="btn btn-bw button-trans btn-lg my-2" type="submit">Browse our inventory!</button>
                 </a>
             </div>
         </div>
         <div class="row justify-content-end" id="home-link-right">
             <div class="col-6 col-lg-4 py-2 bg-shroud">
+                {% if request.user.is_authenticated %}
+                <h3 class="text-uppercase text-center">
+                    Check your old orders here!
+                </h3>
+                <hr>
+                <a href="{% url 'profile' %}" class="d-flex justify-content-center text-decoration-none">
+                    <button class="btn btn-bw button-trans btn-lg my-2">Profile!</button>
+                </a>
+                {% else %}
                 <h3 class="text-uppercase text-center">
                     Easier shopping! Just click below!
                 </h3>
                 <hr>
-                <a href="{% url 'account_signup' %}">
-                    <button class="btn btn-lg btn-outline-success bg-dark my-2" type="submit">Sign up!</button>
-                </a> 
+                <a href="{% url 'account_signup' %}" class="d-flex justify-content-center text-decoration-none">
+                    <button class="btn btn-bw button-trans btn-lg my-2" type="submit">Sign up!</button>
+                </a>
+                {% endif %}
             </div>
         </div>
     </div>
