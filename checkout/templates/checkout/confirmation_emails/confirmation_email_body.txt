@@ -9,7 +9,7 @@ Order Total: ${{ order.order_total }}
 Delivery Cost: ${{ order.delivery_cost }}
 Grand Total: {{ order.grand_total }}
 
-Your order is being shipped to {{ order.street_address1 }} in {{ order.town_or_city }}, {{ order.county }}.
+Your order is being shipped to {{ order.street_address }} in {{ order.town_or_city }}, {{ order.county }}.
 
 Thank you for your purchase!
 
