@@ -48,7 +48,7 @@
                                     <img class="product-cart-img" src="{{ MEDIA_URL }}placeholder.png" alt="{{ item.product.name }}">
                                 {% endif %}
                                 </th>
-                                <td class="py-5"><strong><p>{{ item.product.sku }}</p></strong></td>
+                                <td class="py-5"><strong>{{ item.product.sku }}</strong></td>
                                 <td class="py-5">{{ item.product.name }}</td>
                                 <td class="py-5">
                                     <div class="row">
@@ -109,13 +109,15 @@
                         {% if free_delivery_in > 0 %}
                             <p class="mb-1 text-danger text-center">
                                 You could get free delivery by spending just
-                                <strong>${{ free_delivery_in }}</strong> more!
                             </p>
+                            <strong class="mb-1 text-danger text-center">${{ free_delivery_in }}</strong>
+                            <p class="mb-1 text-danger text-center">more!</p>
+                            
                         {% endif %}
                     </div>
                 {% else %}
-                <strong><p class="my-3">Your cart is empty!</p></strong>
-                <a href="{% url 'products' %}" class="btn btn-lg btn-dark button-trans mt-3">
+                <p class="my-3"><strong>Your cart is empty!</strong></p>
+                <a href="{% url 'products' %}" class="btn btn-lg text-white button-trans mt-3">
                     <span>
                         <i class="fas fa-chevron-left"></i>
                     </span>
@@ -197,7 +199,7 @@
             {% else %}
                 <div class="container-fluid">
                     <div class="row">
-                        <strong><p class="my-3">Your cart is empty!</p></strong>
+                       <p class="my-3"><strong>Your cart is empty!</strong></p>
                     </div>
                     <div class="row d-flex justify-content-center mt-3">
                         <a href="{% url 'products' %}" class="btn btn-sm btn-black text-white mt-3 w-50">
@@ -219,7 +221,7 @@
 {{ block.super }}
 {% include 'products/includes/qty_script.html' %}
 
-<script type="text/javascript">
+<script>
     $('.update-product').click(function (e) {
         var form = $(this).parents('.update-form');
         form.submit();
