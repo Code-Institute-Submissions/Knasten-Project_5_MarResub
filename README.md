@@ -202,6 +202,7 @@ The creation of an account gives access to the following features:
     This to make sure the webhook handles form validation in case of any unforseen mistakes from server or customer side.
 -   All views has been tested by visiting every assigned url
 -   All links has been tested by clicking, making sure you can flow through the site.
+-   Confirmation of working [Webhooks](readme-files/hook_control.png)
 
 Additionally, all code was validated in the following ways:
 
