@@ -1,4 +1,4 @@
-![GamerZDen](readme-files/index.jpg)
+![GamerZDen](readme-files/gamerzden.png)
 
 # GamerZDen
 
@@ -37,7 +37,7 @@
 
 Info about the site
 
-![GamerZDen Responsiveness ](pic of response)
+![GamerZDen Responsiveness ](readme-files/response.png)
 
 The site has been deployed to Heroku and can be viewed [here](https://gamerzden.herokuapp.com/).
 
@@ -126,7 +126,7 @@ A simple color scheme was used to enhance readability and usability.
 ### Existing Features
 
 #### Home Page
-
+![GamerZDen Landing Page](readme-files/index.jpg)
 -   The home page displays a header with different links depeding on if logged in or not
     Also depending on what type of account, for example if superuser or shopper
 -   The home page also consist of a nice background with two different links
