@@ -7,6 +7,7 @@ from .forms import ProductForm
 
 # Create your views here.
 
+
 def all_products(request):
     """View returns all products and sorts/filters"""
     products = Product.objects.all()
@@ -42,7 +43,6 @@ def all_products(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
-
 
     selected_sorting = f'{sort}_{direction}'
 

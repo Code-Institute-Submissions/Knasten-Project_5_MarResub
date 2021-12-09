@@ -9,18 +9,18 @@ import stripe
 import json
 
 # Using Django
+
+
 @require_POST
 @csrf_exempt
 def webhook(request):
-    
+
     stripe.api_key = settings.STRIPE_SECRET_KEY
     payload = request.body
     event = None
 
     try:
-        event = stripe.Event.construct_from(
-        json.loads(payload), stripe.api_key
-        )
+        event = stripe.Event.construct_from(json.loads(payload), stripe.api_key)
     except ValueError as e:
         # Invalid payload
         return HttpResponse(status=400)

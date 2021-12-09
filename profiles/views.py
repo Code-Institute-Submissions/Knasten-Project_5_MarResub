@@ -11,6 +11,7 @@ import datetime
 
 # Create your views here.
 
+
 @login_required
 def profile(request):
     """ Displays the user's profile. """
@@ -30,7 +31,6 @@ def profile(request):
 
     for order in orders:
         date = order.date.strftime('%d/%m/%Y')
-
 
     template = 'profiles/profile.html'
     context = {
