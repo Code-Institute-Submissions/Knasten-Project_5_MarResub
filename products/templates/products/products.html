@@ -17,7 +17,7 @@
                     </div>
                 </form>
             </div>
-            <hr style="width: 50%;" class="mx-auto">
+            <hr style="width: 50%;" class="mx-auto text-white">
             <div class="col-12 mt-4">
                 <div class="d-flex justify-content-center mb-3">
                     <div class="sort-select-wrapper">
@@ -101,6 +101,7 @@
             {% endfor %}
         </div>
     </div>
+    <button class ="button-trans" onclick="topFunction()" id="top-btn" title="Go to top">Back to top</button>
 {% endblock %}
 
 {% block postloadjs %}
@@ -126,5 +127,25 @@
                 window.location.replace(currentUrl);
             }
         })
+
+        // Get the button
+        mybutton = document.getElementById("top-btn");
+
+        // Below 400 px from top show button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // On click scroll back to top
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
     </script>
 {% endblock %}

@@ -73,7 +73,7 @@ span, a, small {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: rgba(58, 57, 57, 0.7);
+	background: rgba(78,76,77,0.99);
 	z-index: -1;
 }
 /*--------------------------------------- Image styling -------------*/
@@ -110,9 +110,6 @@ span, a, small {
 .product-row {
     display: table;
 }
-
-
-
 
 /*--------------------- Django Message Container ----------- */
 .message-container {
@@ -302,9 +299,22 @@ select::-ms-expand {
     -webkit-transition: background-position .3s;
     transition: background-position .3s;
 }
+
 .button-trans:hover {
     background-position: 0 -100%;
     color: #000 !important;
+}
+
+#top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99999;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
 }
   
 /* -------------------------- MEDIA QUERIES --- */
