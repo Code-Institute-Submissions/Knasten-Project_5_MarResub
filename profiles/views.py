@@ -26,6 +26,7 @@ def profile(request):
 
     form = ProfileForm(instance=profile)
     orders = profile.orders.all()
+    date = None
 
     for order in orders:
         date = order.date.strftime('%d/%m/%Y')
