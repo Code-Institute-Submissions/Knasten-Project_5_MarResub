@@ -25,12 +25,12 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="logo-font mb-4">Product Management | Add Product</h2>
+                <h2 class="logo-font mb-4"><strong>Product Management | Add Product</strong></h2>
                 <hr>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 col-12 col-md-10">
                 <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
