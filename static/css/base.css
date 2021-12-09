@@ -276,14 +276,6 @@ select::-ms-expand {
     display: none;
 }
 
-.select {
-    width: 100%;
-    min-width: 15ch;
-    max-width: 30ch;
-     var(--select-border);
-    
-  }
-
 /*-------------- Custom Button -------------*/
 
 .button-trans {

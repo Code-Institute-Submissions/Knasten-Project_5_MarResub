@@ -11,6 +11,7 @@
   - [Design](#design)
     - [Fonts](#fonts)
     - [Colors](#colors)
+    - [Wireframes](#wireframes)
 - [Features](#features)
   - [Existing Features](#existing-features)
     - [Home Page](#home-page)
@@ -109,6 +110,15 @@ A simple color scheme was used to enhance readability and usability.
     I also tested the contrast between my colors using [Contrast Checker](https://webaim.org/resources/contrastchecker/)  
     Contrast images can be found [here](readme-files/color_contrast.pdf)
 -   Then for the main parts of the site I choose to go with a white background. This to not steal attention from our products which are the main thing in the site.
+
+#### Wireframes
+
+-  Wireframes were made as a way to guide through out the creation of the application.
+-  ![Landing Page Wireframe](readme-files/landingpage.png)
+-  ![Products Page Wireframe](readme-files/products.png)
+    There are many more to view however I do not wanna fill this document with only pictures.
+    To view the others either click the link below or locate readme-files in my [repository](https://github.com/Knasten/Project_5)
+-   [Wireframes](readme-files/wireframes.pdf)
 
 
 ## Features
