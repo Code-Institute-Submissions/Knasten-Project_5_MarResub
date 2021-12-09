@@ -16,7 +16,6 @@
     - [Home Page](#home-page)
     - [Product Listing](#product-listing)
     - [Product View](#product-view)
-    - [Producers Page](#producers-page)
     - [User Account](#user-account)
     - [Shopping Cart](#shopping-cart)
     - [Payment](#payment)
@@ -100,9 +99,10 @@ Two fonts from [Google Fonts](https://fonts.google.com/) were used throughout th
 
 #### Colors
 
-A simple color scheme was used to accentuate readability and usability.
+A simple color scheme was used to enhance readability and usability.
 
--   I choose to go with white background except the landing page which I felt need a bit more spice. And to break all the white and black of, I added a colorful header.
+-   For the index site I choose a colorful background which matches but doesn't melt in with my header.
+    I also tested the contrast between my colors using [Contrast Checker](https://webaim.org/resources/contrastchecker/)[Link Contrast Images](readme_files/color_contrast.pdf)
 
 
 ## Features
