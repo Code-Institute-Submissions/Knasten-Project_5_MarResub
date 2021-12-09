@@ -34,7 +34,8 @@ span, a, small {
 }
 
 #home-link-right {
-    margin-top: 125px;
+    margin-top: 50px;
+    margin-bottom: auto;
 }
 
 .zero-padding-margin {
@@ -170,8 +171,8 @@ span, a, small {
 
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
-    background-color: #222;
+	color: #000;
+    background-color: #FFF;
     border-color: #222;
 }
 
@@ -293,6 +294,7 @@ select::-ms-expand {
 }
 .button-trans:hover {
     background-position: 0 -100%;
+    color: #000 !important;
 }
   
 /* -------------------------- MEDIA QUERIES --- */

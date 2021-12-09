@@ -17,6 +17,7 @@
     <button class="btn-bw button-trans" type="submit">{% trans 'Sign Out' %}</button>
 </form>
 <form action="{% url 'home' %}" method="GET" class="d-inline-block">
+    {% csrf_token %}
     <button class="btn btn-bw button-trans">Cancel</button>
 </form>
 
