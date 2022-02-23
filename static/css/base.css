@@ -211,6 +211,16 @@ span, a, small {
     font-weight: 500;
 }
 
+.home-btn {
+    color: #dc3545;
+	border: solid 1px white;
+}
+
+.home-btn:hover {
+    color: rgb(255, 255, 255, 0.7);
+    background-color: #dc3545;
+}
+
 .btn-white {
     color: #000;
     background-color: #fff;

@@ -5,6 +5,10 @@
     <link rel="stylesheet" href="{% static 'products/css/products.css' %}">
 {% endblock %}
 
+{% block extra_title %}
+    EDIT SKU: {{ product.sku }}
+{% endblock %}
+
 
 {% block page_header %}
     <div class="header-container mb-3 bg-black">
