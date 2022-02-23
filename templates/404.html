@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col col-sm-6 bg-shroud m-5 px-2 m-sm-0">
+                <h2>
+                    Something went wrong, please try again later!
+                </h2>
+                <h5>In the meanwhile follow the link back home and browse our goods.</h5>
+                <p>
+                    <a href="{% url 'home' %}" class="btn btn-lg home-btn">HOME</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
