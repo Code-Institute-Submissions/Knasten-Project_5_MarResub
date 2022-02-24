@@ -16,7 +16,7 @@ class Testimonial(models.Model):
 
     name = models.ForeignKey(User, on_delete=models.CASCADE, related_name="testimonials")
     created_on = models.DateTimeField(auto_now_add=True)
-    rating = models.IntegerField(validators=[MaxValueValidator(5), MinValueValidator(5)], default=1, choices=choices)
+    rating = models.IntegerField(validators=[MaxValueValidator(5), MinValueValidator(1)], default=1, choices=choices)
     content = models.TextField(max_length=1000)
     approved = models.BooleanField(default=False)
 
