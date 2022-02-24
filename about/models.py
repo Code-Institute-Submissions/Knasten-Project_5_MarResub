@@ -24,4 +24,4 @@ class Testimonial(models.Model):
         ordering = ['-created_on']
 
     def __str__(self):
-        return f'{self.name} rated {self.rating}'
+        return f'{self.name} submitted a testimonial with rating of: {self.rating}'
