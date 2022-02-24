@@ -5,7 +5,7 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 # Create your models here.
 
 
-class Testimonials(models.Model):
+class Testimonial(models.Model):
     choices = (
         (1, 1),
         (2, 2),
