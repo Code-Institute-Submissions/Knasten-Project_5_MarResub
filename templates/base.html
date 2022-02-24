@@ -45,7 +45,7 @@
        <header class="container-fluid fixed-top bg-header">
             <div class="navbar navbar-expand-lg navbar-light no-padding-margin">
                 <div class="row w-100 py-2">
-                    <div class="col me-auto">
+                    <div class="col ms-2 me-auto">
                         <button class="navbar-toggler" id="navbar-button" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -127,9 +127,10 @@
 
         {% block page_header %}
         {% endblock %}
-
-        {% block content %}
-        {% endblock %}
+        <div class="content">
+            {% block content %}
+            {% endblock %}
+        </div>
         
         {% block postloadjs %}
         <script>
@@ -138,10 +139,10 @@
         {% endblock %}
         
         <!-- Footer -->
-            <footer>
+            <footer id="main-footer" class="bg-shroud">
                 <div class="container">
-                    <div class="row">
-                        <div id="left" class="col-4">
+                    <div class="row bg-white">
+                        <div class="col-8 col-md-4">
                             <!-- Begin Mailchimp Signup Form -->
                             <div id="mc_embed_signup">
                                 <form action="https://herokuapp.us14.list-manage.com/subscribe/post?u=e63fb5d2abbefb1d1bcd0b2b4&amp;id=ec5f9a7138" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -169,12 +170,12 @@
                             </div>
                             <!--End mc_embed_signup-->
                         </div>
-                        <div id="middle" class="col-4">
-
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="https://www.facebook.com/Gamerzden-101064999167391" rel="noopener" target="_blank"><i class="fab fa-facebook fa-3x my-2"></i></a>
                         </div>
-                        <div id="right" class="col-4">
-
-                        </div>
+                        <div class="col-6"></div>
                     </div>
                 </div>
             </footer>
