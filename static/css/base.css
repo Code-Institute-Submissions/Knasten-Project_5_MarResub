@@ -49,6 +49,10 @@ span, a, small {
     width: 100%;
 }
 
+.content {
+    min-height: 100vh;
+}
+
 /*-------------------------- Backgrounds & Overlays -------------*/
 .bg-shroud {
     background-color: rgb(255, 255, 255, 0.7);
@@ -332,6 +336,19 @@ select::-ms-expand {
     background:#fff;
     clear:left;
     font:14px Helvetica,Arial,sans-serif;
+}
+
+/* Footer */
+
+#main-footer {
+    min-height: 250px;
+    margin-top: 50px;
+    display: table;
+    width: 100%;
+}
+
+#main-footer > * {
+    display: table-cell;
 }
   
 /* -------------------------- MEDIA QUERIES --- */
