@@ -53,18 +53,20 @@
                     {% endfor %}
                 </table>
                 <hr style="height: 3px;">
-                {% if page_obj.has_next %}
                 <div class="d-flex justify-content-between justify-content-md-end">
-                    <div class="prev d-block d-md-none">
-                        <a href="?page=1">&laquo; First | </a>
-                        <a href="?page={{ page_obj.previous_page_number }}"> Previous</a>
-                    </div>
-                    <div class="next">
-                        <a href="?page={{ page_obj.next_page_number }}">Next | </a>
-                        <a href="?page={{ page_obj.paginator.num_pages }}"> Last  &raquo;</a>
-                    </div>
+                    {% if page_obj.has_previous %}
+                        <div class="prev d-block d-md-none">
+                            <a href="?page=1">&laquo; First | </a>
+                            <a href="?page={{ page_obj.previous_page_number }}"> Previous</a>
+                        </div>
+                    {% endif %}
+                    {% if page_obj.has_next %}
+                        <div class="next">
+                            <a href="?page={{ page_obj.next_page_number }}">Next | </a>
+                            <a href="?page={{ page_obj.paginator.num_pages }}"> Last  &raquo;</a>
+                        </div>
+                    {% endif %}
                 </div>
-                {% endif %}
             </div>
         </div>
     </div>
