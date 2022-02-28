@@ -80,6 +80,7 @@ span, a, small {
 	background: rgba(78,76,77,0.99);
 	z-index: -1;
 }
+
 /*--------------------------------------- Image styling -------------*/
 
 .product-img {
@@ -350,7 +351,14 @@ select::-ms-expand {
 #main-footer > * {
     display: table-cell;
 }
-  
+
+/* -------------------------- ABOUT --- */
+
+.vr {
+    border: #000 solid 1px;
+    height: 90%;
+}
+
 /* -------------------------- MEDIA QUERIES --- */
 
 @media only screen and (max-width: 576px)  {
