@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extra_js %}
+   
+{% endblock %}
+{% block extra_title %}
+    About
+{% endblock %}
+
+{% block page_header %}
+    <div class="header-container mb-3"></div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay-dark"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-5">
+                <table id="left-testimonials">
+                    {% for testimonial in page_obj %}
+                    {% if forloop.counter0|divisibleby:2 %}
+                        <tr><th>User:</th></tr>
+                        <tr><td id="user1">{{ testimonial.name }}</td></tr>
+                        <tr><th>Content:</th></tr>
+                        <tr><td id="content1">{{ testimonial.content }}</td></tr>
+                        <tr><th>Rating:</th></tr>
+                        <tr><td id="rating1">{{ testimonial.rating }}</td></tr>
+                    {% endif %}
+                    {% endfor %}
+                </table>
+                <hr style="height: 3px;">
+                {% if page_obj.has_previous %}
+                <div class="d-none d-md-block">
+                    <a href="?page=1">&laquo; First | </a>
+                    <a href="?page={{ page_obj.previous_page_number }}"> Previous</a>
+                </div>
+                {% endif %}
+            </div>
+            <div class="col-1 d-md-flex d-none justify-content-center">
+                <div class="vr"></div>
+            </div>
+            <div class="col-12 col-md-5">
+                <table id="right-testimonials">
+                    {% for testimonial in page_obj %}
+                    {% if forloop.counter|divisibleby:2 %}
+                        <tr><th>User:</th></tr>
+                        <tr><td id="user1">{{ testimonial.name }}</td></tr>
+                        <tr><th>Content:</th></tr>
+                        <tr><td id="content1">{{ testimonial.content }}</td></tr>
+                        <tr><th>Rating:</th></tr>
+                        <tr><td id="rating1">{{ testimonial.rating }}</td></tr>
+                    {% endif %}
+                    {% endfor %}
+                </table>
+                <hr style="height: 3px;">
+                {% if page_obj.has_next %}
+                <div class="d-flex justify-content-between justify-content-md-end">
+                    <div class="prev d-block d-md-none">
+                        <a href="?page=1">&laquo; First | </a>
+                        <a href="?page={{ page_obj.previous_page_number }}"> Previous</a>
+                    </div>
+                    <div class="next">
+                        <a href="?page={{ page_obj.next_page_number }}">Next | </a>
+                        <a href="?page={{ page_obj.paginator.num_pages }}"> Last  &raquo;</a>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-9 col-md-4">
+                <h3>Please tell us what you think!</h3>
+                <h5>It will help us improve and make your visit more pleasant</h5>
+                <form method="POST" action="{% url 'about' %}" class="form mb-2" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {% for field in form %}
+                        {{ field | as_crispy_field }}
+                    {% endfor %}
+                    <div>
+                        <a href="{% url 'about' %}" class="btn btn-bw button-trans rounded mt-3"><span><i class="fas fa-chevron-left"></i></span> About </a>
+                        <button class="btn btn-bw button-trans mt-3 ms-3" type="submit"><span><i class="fas fa-lock"></i></span> Submit </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block postloadjs %}
+<script>
+// Called onload to fit the testimonials to same size and prefill data.
+    window.onload = function(e){
+        sizeTestimonials();
+        window.addEventListener('resize', sizeTestimonials)
+    }
+
+    // Function to make both testimonial boxes the same height.
+    // The added 16 px is from the orginal margin from the <hr>
+    function sizeTestimonials() { 
+        let leftTestimonials = document.getElementById('left-testimonials')
+        let rightTestimonials = document.getElementById('right-testimonials')
+        let leftHeight = leftTestimonials.offsetHeight
+        let rightHeight = rightTestimonials.offsetHeight
+        if (leftHeight > rightHeight) {
+            rightTestimonials.style.marginBottom = (leftHeight - rightHeight + 16) + "px"
+            leftTestimonials.style.marginBottom = '0px'
+        } else if (rightHeight > leftHeight) {
+            leftTestimonials.style.marginBottom = (rightHeight - leftHeight + 16) + "px"
+            rightTestimonials.style.marginBottom = '0px'
+        } else {
+            rightTestimonials.style.marginBottom = '0px'
+            leftTestimonials.style.marginBottom = '0px'
+        }
+    }
+</script>
+{% endblock %}
