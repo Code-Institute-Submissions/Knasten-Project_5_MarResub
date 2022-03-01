@@ -1,5 +1,5 @@
 from django import forms
-from .models import Testimonial
+from .models import Testimonial, Question
 
 
 class TestimonialForm(forms.ModelForm):
@@ -14,3 +14,18 @@ class TestimonialForm(forms.ModelForm):
         def __init__(self, *args, **kwargs):
             super().__init__(*args, **kwargs)
 
+
+class QuestionForm(forms.ModelForm):
+
+    class Meta:
+        model = Question
+        fields = '__all__'
+
+        name = forms.CharField,
+        email = forms.EmailField,
+        title = forms.CharField,
+        question = forms.Textarea,
+        telephone = forms.CharField,
+
+        def __init__(self, *args, **kwargs):
+            super().__init__(*args, **kwargs)
