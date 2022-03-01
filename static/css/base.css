@@ -27,6 +27,13 @@ span, a, small {
     font-family: 'Lato', serif;
     font-weight: 400;
 }
+
+.vr-base {
+    border: #000 solid 1px;
+    width: auto;
+    background-color: #000;
+}
+
 /*------------------- Header & Top Margin ---------*/
 
 .margin-container {
