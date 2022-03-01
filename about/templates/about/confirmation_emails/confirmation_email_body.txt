@@ -1,0 +1,7 @@
+Hello! Your customer {{ question.name }} have a new question awaiting answer!
+Title: {{ question.title }}
+Question: {{ question.question }}
+E-Mail: {{ question.email }}
+{% if question.phone %}
+Phone: {{ question.phone }}
+{% endif %}
