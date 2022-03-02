@@ -115,6 +115,53 @@
                     {% endif %}
                 </div>
             </div>
+            <div class="col-12 col-md-6 p-3">
+                <h3 class="ms-2">Leave your feedback!</h3>
+                <hr class="w-50">
+                <div>
+                    <form method="POST" action="{% url 'review' product.id %}" class="form mb-2 p-3" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {% for field in form %}
+                            {{ field | as_crispy_field }}
+                        {% endfor %}
+                        <div>
+                            <button class="btn btn-bw button-trans mt-3 ms-3" type="submit"><span><i class="fas fa-lock"></i></span> Submit </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 p-3">
+                <h3 class="ms-2">Reviews</h3>
+                <hr class="w-50">
+                {% for review in page_obj %}
+                    <div>
+                        <h5>{{ review.title }} by <i>{{ review.author }}</i></h5>
+                        <p>{{ review.review }}</p>
+                    </div>
+                {% endfor %}
+                <div class="pagination">
+                    <span class="step-links">
+                        {% if page_obj.has_previous %}
+                            <a href="?page=1">&laquo; First </a>
+                            <a href="?page={{ page_obj.previous_page_number }}"> Previous</a>
+                        {% else %}
+                            <a href="#" class="disabled">&laquo; First </a>
+                            <a href="#" class="disabled"> Previous</a>
+                        {% endif %}
+                        <span class="current">
+                            | Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}. |
+                        </span>
+                
+                        {% if page_obj.has_next %}
+                            <a href="?page={{ page_obj.next_page_number }}">Next  </a>
+                            <a href="?page={{ page_obj.paginator.num_pages }}"> Last  &raquo;</a>
+                        {% else %}
+                            <a href="#" class="disabled">Next  </a>
+                            <a href="#" class="disabled"> Last  &raquo;</a>
+                        {% endif %}
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}
