@@ -82,7 +82,11 @@
                     {% endfor %}
                     <div>
                         <a href="{% url 'about' %}" class="btn btn-bw button-trans rounded mt-3"><span><i class="fas fa-chevron-left"></i></span> About </a>
+                        {% if user.is_authenticated %}
                         <button class="btn btn-bw button-trans mt-3 ms-3" type="submit"><span><i class="fas fa-lock"></i></span> Submit </button>
+                        {% else %}
+                        <a class="btn btn-bw button-trans mt-3 ms-3" href="{% url 'account_login' %}"><span><i class="fas fa-lock"></i></span> Login to submit </a>
+                        {% endif %}
                     </div>
                 </form>
             </div>
