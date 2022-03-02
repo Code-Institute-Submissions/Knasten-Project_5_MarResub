@@ -1,9 +1,11 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
-from django.contrib.auth.decorators import user_passes_test
+from django.contrib.auth.decorators import user_passes_test, login_required
 from django.db.models import Q
-from .models import Product, Category
-from .forms import ProductForm
+from django.core.paginator import Paginator
+
+from .models import Product, Category, Review
+from .forms import ProductForm, ReviewForm
 
 # Create your views here.
 
@@ -59,9 +61,19 @@ def product_detail(request, id):
 
     product = get_object_or_404(Product, pk=id)
 
+    form = ReviewForm()
+    review_list = Review.objects.filter(product=id, approved=True)
+    paginator = Paginator(review_list, 6)
+
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+
     context = {
         'product': product,
+        'form': form,
+        'page_obj': page_obj,
     }
+
     return render(request, 'products/product_detail.html', context)
 
 
@@ -117,3 +129,19 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product was successfully deleted')
     return(redirect(reverse('products')))
+
+
+@login_required
+def create_review(request, id):
+    if request.method == "POST":
+        review = Review()
+        review.author = request.user
+        review.title = request.POST.get('title')
+        review.review = request.POST.get('review')
+        review.product = get_object_or_404(Product, pk=id)
+        review.save()
+        messages.success(request, 'Your review is pending approval!')
+        return redirect(request.META['HTTP_REFERER'])
+    else:
+        success_url = "/".join(request.get_full_path().split('/')[:-1])
+        return redirect(success_url)
