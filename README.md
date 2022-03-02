@@ -47,6 +47,8 @@ The site has been deployed to Heroku and can be viewed [here](https://gamerzden.
 
 This is my fifth and final project during my course at CodeInstitute. The goal was to create an e-commerce site 
 using django framework. Implementing stripe for payments and AWS for file storing. Then deploy it to heroku.
+This site is made to reach out to gamers, and make sure they can order their dream computer from one site.
+If they do not have the knowledge to build their own computer there are also some finished PC's to order.
 
 
 ### User Stories
@@ -68,6 +70,20 @@ using django framework. Implementing stripe for payments and AWS for file storin
 | View my order history                              | find an order in case of warranty claim       |
 | Receive an email confirmation about my order       | have archived information about it            |
 | Contact the shop                                   | know about the status of an order             |
+| know what I agree to                               | know my information isn't used malicously     |
+| be able to leave a testimonial for other customers | help other customers assess the store         |
+| be able to read former users testimonials          | know if this site is legit                    |
+| be able to contact the store with any questions    | receive proper help                           |
+| leave reviews                                      | help other customers choose the best products |
+| read other users reviews                           | know if the product is good or bad            |
+| get feedback when submitting an issue              | know it has been properly sent                |
+
+
+| **As an customer I want a**                        | **So that I can**                             |
+| -------------------------------------------------- | --------------------------------------------- |
+| link to the facebook pages                         | easily follow the store progress              |
+| link to the facebook pages                         | easily follow the store progress              |
+
 
 
 #### User Stories for Shop Administrators
@@ -77,6 +93,20 @@ using django framework. Implementing stripe for payments and AWS for file storin
 | Add a product                               | update with the latest deals                     |
 | Update a product                            | change prices, descriptions and other criteria   |
 | Remove a product                            | remove products not for sale anymore             |
+| be able to get feedback                     | adjust the site accordingly                      |
+| be able to approve testimonials             | ensure no explicit content is posted on my site  |
+| store former questions from users           | put together an FAQ section                      |
+| be able to get feedback on my products      | sort my inventory for good and bad products      |
+| get a mail with the issue and contact info  | I can quickly respond                            |
+
+
+| **As an administrator I want**              | **So that I can**                                |
+| ------------------------------------------- | ------------------------------------------------ |
+| a Facebook Page                             | interact with my customers and gain confidence   |
+| a Facebook Page                             | can promote certain products with ease           |
+| a link to my pages on facebook              | promote my company with ease                     |
+| the customer to feel safe on my site        | know they will feel confident in my site         |
+
 
 
 
@@ -182,6 +212,7 @@ The creation of an account gives access to the following features:
 #### Administrator features
 
 -   On product pages, an administrator has additional links to edit a products information or remove it from the shop
+-   Administrator has the possibility to add products from product management page.
 
 
 ### Features Left to implement
@@ -189,20 +220,13 @@ The creation of an account gives access to the following features:
 -   More payment options during checkout adding paypal would be great
 -   Social account login
 -   A way for the site owner to confirm and auto send mail when order is packaged and sent to customer
+-   FAQ section
+-   Answer question from site so that answer and question is saved and connected (This will make up FAQ section)
 
 ## Testing
 
-# Testing was done manually throughout the development process. Just some of the testing below:
-
--   I have tested form submission both from webhooks and directly with javascript  
-    This was tested by commenting out javascript form submission and then checking admin for orders
--   Profile saving was tested by making a purchase then checking admin if profile updated
--   Auto population of checkout fields was tested by making a purchase when profile information already was updated
--   Webhooks have been tested by making purchases with and without form submit active.  
-    This to make sure the webhook handles form validation in case of any unforseen mistakes from server or customer side.
--   All views has been tested by visiting every assigned url
--   All links has been tested by clicking, making sure you can flow through the site.
--   Confirmation of working [Webhooks](readme-files/hook_control.png)
+# Testing was done manually throughout the development process.
+All test can be found [here](https://github.com/Knasten/Project_5/blob/main/TESTING.md)
 
 Additionally, all code was validated in the following ways:
 
@@ -319,6 +343,7 @@ To deploy GamerZDen to heroku the following steps are to be followed.
 -   Images used in the project comes from [BestBuy](https://www.bestbuy.com/) as law dictates you can use images in educational purposes
     As long as they are not used in any way to disrupt the business
 -   Home background images was taken from Photo by [Sadeq Shahsvan](https://unsplash.com/@sadeqshahsvan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
 ### Acknowledgements
 
 -   This site is meant for educational use.
@@ -330,23 +355,3 @@ To deploy GamerZDen to heroku the following steps are to be followed.
 -   [EMAIL_BACKEND](https://django-allauth.readthedocs.io/en/latest/faq.html?highlight=EMAIL_BACKEND#when-i-sign-up-i-run-into-connectivity-errors-connection-refused-et-al)
 -   [Restricting Views](https://stackoverflow.com/questions/15998140/how-to-limit-a-view-to-superuser-only/47689629)
 -   [Restricting Views Url Redirect](https://docs.djangoproject.com/en/3.2/topics/auth/default/#django.contrib.auth.decorators.user_passes_test)
-
-  
-
-
-## Bugs
-
-### Solved
-1.  Media was not showing up when I first started out the project
--   After reading and checking the code I found it was this line "[BASE_DIR / 'media']".
-    I had to change it to os.path.join(BASE_DIR, 'media) and it started working. Though the static files were still able to use 'BASE_DIR /' syntax
-2.  Products images not showing up in cart: This was beacuse of spelling mistake on the url link.
--   Accidentally wrote: "." instead of "_"
-3.  Alot of problems with my collasible menus OR when they were working my toast didn't work.
--   After alot of thinking I found my toast would work with an older version of bootstrap and I could get my collasible working on an version of bootstrap
-    by removing 'bs' from all 'data' arguments in the form.
-
-### Not solved
--   When using the keyboard arrows you are able to go beyond the qty limit set, when adding products to the cart
--   You can write in any number in the qty field by keyboard input  
-  **This is however doublechecked by the form submission**
