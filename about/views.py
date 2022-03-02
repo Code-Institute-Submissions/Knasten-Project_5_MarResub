@@ -11,23 +11,28 @@ from .forms import TestimonialForm, QuestionForm
 from .models import Testimonial, Question
 
 # Create your views here.
-    
+
 
 def about_view(request):
     """ Uses form data to add data to DB and also queries testimonials """
     if request.method == "POST":
-        form = TestimonialForm(request.POST, request.FILES)
-        if form.is_valid():
-            testimonial = form.save(commit=False)
-            testimonial.name = request.user
-            testimonial.save()
-            messages.success(request, 'Testimonial has been submitted for review!')
-            return redirect('about')
+        if request.user.is_authenticated:
+            form = TestimonialForm(request.POST, request.FILES)
+            if form.is_valid():
+                testimonial = form.save(commit=False)
+                testimonial.name = request.user
+                testimonial.save()
+                messages.success(request, 'Your review was successfully submitted and is awaiting approval')
+                return redirect('about')
+        else:
+            messages.error(request, 'Please login and try again!')
+            return redirect('account_login')
     form = TestimonialForm()
     template = 'about/about.html'
 
-
     testimonials = Testimonial.objects.filter(approved=True)
+
+    form = TestimonialForm()
 
     paginator = Paginator(testimonials, 2)
     page_number = request.GET.get('page')
