@@ -1,0 +1,18 @@
+Hi {{question.name}}!
+We have recieved your question and will contact you as soon as possible!
+
+You submitted this information:
+Title: {{ question.title }}
+Question: {{ question.question }}
+E-Mail: {{ question.email }}
+{% if question.phone %}
+Phone: {{ question.phone }}
+{% endif %}
+
+If you find that you have entered the wrong information please contact us at {{ owner_email }}
+
+We would be happy if you would leave us rating with a comment, to do so please visit this link https://gamerzden.herokuapp.com/about/.
+
+Kindest Regards 
+
+GamerZDen

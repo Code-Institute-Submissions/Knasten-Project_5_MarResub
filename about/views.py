@@ -49,13 +49,14 @@ def create_question(request):
         form = QuestionForm(request.POST, request.FILES)
         if form.is_valid():
             question = form.save()
-            _send_email(question)
+            _send_email_owner(question)
+            _send_email_user(question)
             messages.success(request, f'A confirmation email has been sent to your email at {question.email}!')
             return redirect('home')
 
 
-def _send_email(question):
-    """Send confirmation email to user"""
+def _send_email_owner(question):
+    """Send confirmation email to owner"""
     template_subject = 'about/confirmation_emails/confirmation_email_subject.txt'
     template_body = 'about/confirmation_emails/confirmation_email_body.txt'
     owner_email = settings.DEFAULT_FROM_EMAIL
@@ -63,4 +64,14 @@ def _send_email(question):
     subject = render_to_string(template_subject, {'question': question})
     body = render_to_string(template_body, {'question': question})
     send_mail(subject, body, owner_email, [owner_email])
+
+
+def _send_email_user(question):
+    """Send confirmation email to customer"""
+    template_subject = 'about/confirmation_emails/confirmation_email_subject_customer.txt'
+    template_body = 'about/confirmation_emails/confirmation_email_body_customer.txt'
+    owner_email = settings.DEFAULT_FROM_EMAIL
+    user_email = question.email
+    subject = render_to_string(template_subject, {'question': question})
+    body = render_to_string(template_body, {'question': question})
     send_mail(subject, body, owner_email, [user_email])
