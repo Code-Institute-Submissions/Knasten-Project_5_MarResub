@@ -65,6 +65,10 @@ span, a, small {
     background-color: rgb(255, 255, 255, 0.7);
 }
 
+.bg-shroud-dark {
+    background-color: rgb(125, 125, 125, 0.7);
+}
+
 .bg-header {
     background: var(--primary-header-color);
 }
@@ -339,9 +343,14 @@ select::-ms-expand {
     padding: 5px;
 }
 
+.disabled {
+    pointer-events: none;
+    color: #000;
+}
+
 /* MAILCHIMP */
 #mc_embed_signup {
-    background:#fff;
+    background: none;
     clear:left;
     font:14px Helvetica,Arial,sans-serif;
 }
