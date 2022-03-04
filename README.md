@@ -182,6 +182,7 @@ The creation of an account gives access to the following features:
 #### Administrator features
 
 -   On product pages, an administrator has additional links to edit a products information or remove it from the shop
+-   Administrator has the possibility to add products from product management page.
 
 
 ### Features Left to implement
@@ -189,6 +190,8 @@ The creation of an account gives access to the following features:
 -   More payment options during checkout adding paypal would be great
 -   Social account login
 -   A way for the site owner to confirm and auto send mail when order is packaged and sent to customer
+-   FAQ section
+-   Answer questions from site so that the answer and question is saved and connected (This will make up FAQ section)
 
 ## Testing
 
@@ -319,6 +322,7 @@ To deploy GamerZDen to heroku the following steps are to be followed.
 -   Images used in the project comes from [BestBuy](https://www.bestbuy.com/) as law dictates you can use images in educational purposes
     As long as they are not used in any way to disrupt the business
 -   Home background images was taken from Photo by [Sadeq Shahsvan](https://unsplash.com/@sadeqshahsvan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
 ### Acknowledgements
 
 -   This site is meant for educational use.
@@ -330,23 +334,3 @@ To deploy GamerZDen to heroku the following steps are to be followed.
 -   [EMAIL_BACKEND](https://django-allauth.readthedocs.io/en/latest/faq.html?highlight=EMAIL_BACKEND#when-i-sign-up-i-run-into-connectivity-errors-connection-refused-et-al)
 -   [Restricting Views](https://stackoverflow.com/questions/15998140/how-to-limit-a-view-to-superuser-only/47689629)
 -   [Restricting Views Url Redirect](https://docs.djangoproject.com/en/3.2/topics/auth/default/#django.contrib.auth.decorators.user_passes_test)
-
-  
-
-
-## Bugs
-
-### Solved
-1.  Media was not showing up when I first started out the project
--   After reading and checking the code I found it was this line "[BASE_DIR / 'media']".
-    I had to change it to os.path.join(BASE_DIR, 'media) and it started working. Though the static files were still able to use 'BASE_DIR /' syntax
-2.  Products images not showing up in cart: This was beacuse of spelling mistake on the url link.
--   Accidentally wrote: "." instead of "_"
-3.  Alot of problems with my collasible menus OR when they were working my toast didn't work.
--   After alot of thinking I found my toast would work with an older version of bootstrap and I could get my collasible working on an version of bootstrap
-    by removing 'bs' from all 'data' arguments in the form.
-
-### Not solved
--   When using the keyboard arrows you are able to go beyond the qty limit set, when adding products to the cart
--   You can write in any number in the qty field by keyboard input  
-  **This is however doublechecked by the form submission**
