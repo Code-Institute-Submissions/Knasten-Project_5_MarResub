@@ -21,7 +21,7 @@
     - [Shopping Cart](#shopping-cart)
     - [Payment](#payment)
     - [Administrator features](#administrator-features)
-    - [Facebook](#facebook-page)
+    - [Facebook](#facebook)
     - [About](#about)
     - [Contact](#contact)
   - [Features Left to implement](#features-left-to-implement)
