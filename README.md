@@ -21,6 +21,9 @@
     - [Shopping Cart](#shopping-cart)
     - [Payment](#payment)
     - [Administrator features](#administrator-features)
+    - [Facebook](#facebook-page)
+    - [About](#about)
+    - [Contact](#contact)
   - [Features Left to implement](#features-left-to-implement)
 - [Testing](#testing)
 - [Deployment](#deployment)
@@ -184,6 +187,17 @@ The creation of an account gives access to the following features:
 -   On product pages, an administrator has additional links to edit a products information or remove it from the shop
 -   Administrator has the possibility to add products from product management page.
 
+#### Facebook
+
+-   Facebook page has been made to further market the store page, link can be found in the footer
+
+#### About
+
+-   In the about page you will find testimonials from other customers, aswell as an form to submit your own testimonial
+
+#### Contact
+
+-   In the footer form for contact can be found. On submission, this will send mails to both siteowner and the customer
 
 ### Features Left to implement
 
