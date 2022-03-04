@@ -48,6 +48,14 @@
 -   Payment works correctly, stripe webhooks has been tested
 -   An unsuccessful payment returns the reason for the failure
 -   Verifications for orders are being sent by mail as intended
+<<<<<<< HEAD
+=======
+-   I have tested form submission both from webhooks and directly with javascript  
+    This was tested by commenting out javascript form submission and then checking admin for orders
+-   Webhooks have been tested by making purchases with and without form submit active.  
+    This to make sure the webhook handles form validation in case of any unforseen mistakes from server or customer side.
+-   Confirmation of working [Webhooks](readme-files/hook_control.png)
+>>>>>>> bcb6395c248f75d3d11a30c871b59065270a6fef
 
 
 ## Profile
@@ -57,6 +65,10 @@
 -   Order history for profile is displayed correctly
 -   Clicking on an order takes you back to order confirmation and displays correctly.
 -   Creating a user works as intended and mail is sent out to verify email.
+<<<<<<< HEAD
+=======
+-   Profile saving was tested by making a purchase then checking admin if profile updated
+>>>>>>> bcb6395c248f75d3d11a30c871b59065270a6fef
 
 
 
@@ -127,4 +139,8 @@ It has been tested on several different heights and widths.
 
 **This is however doublechecked by the form submission**
 -   When using the keyboard arrows you are able to go beyond the qty limit set, when adding products to the cart
+<<<<<<< HEAD
 -   You can write in any number in the qty field by keyboard input  
+=======
+-   You can write in any number in the qty field by keyboard input
+>>>>>>> bcb6395c248f75d3d11a30c871b59065270a6fef
