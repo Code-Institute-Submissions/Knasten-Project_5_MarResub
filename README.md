@@ -235,11 +235,7 @@ The creation of an account gives access to the following features:
 -   Social account login
 -   A way for the site owner to confirm and auto send mail when order is packaged and sent to customer
 -   FAQ section
-<<<<<<< HEAD
--   Answer questions from site so that the answer and question is saved and connected (This will make up FAQ section)
-=======
 -   Answer question from site so that answer and question is saved and connected (This will make up FAQ section)
->>>>>>> bcb6395c248f75d3d11a30c871b59065270a6fef
 
 ## Testing
 
